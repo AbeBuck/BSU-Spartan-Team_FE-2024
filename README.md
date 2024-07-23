@@ -6,13 +6,12 @@ This repository provides information pertaining to the robot NOVUS SPARTIAT, a s
 ## Content
 
 * `Bills of Materials` contains the list of all the items necessary to build the robot
-* `Team Photos` contains 2 photos of the team (an official one and one funny photo with all team members)
-* `Vehicle Photos` contains 6 photos of the vehicle (from every side, from top and bottom)
-* `Video Performance` contains the video.md file with the link to a video where driving demonstration exists
-* `schemes` contains one or several schematic diagrams in form of JPEG, PNG or PDF of the electromechanical components illustrating all the elements (electronic components and motors) used in the vehicle and how they connect to each other.
+* `Pictorial Diagram` contains a pictorial wiring diagram of the whole robot including its components
+* `Team Photos` contains 2 photos of the team: an official one and one funny photo
+* `Vehicle Photos` contains 6 photos of the vehicle from every sides
+* `Video Performance` contains 2 video links showcasing each challenge round
 * `src` contains code of control software for all components which were programmed to participate in the competition
-* `models` is for the files for models used by 3D printers, laser cutting machines and CNC machines to produce the vehicle elements. If there is nothing to add to this location, the directory can be removed.
-
+  
 ## 1. Mobility Management
 
 Motor selection is a crucial part of building the robot since its maneuverability highly depends on it. LEGO® Education SPIKE™ Prime Set has two (2) available motors: Medium Angluar Motor and Large Angular Motor, which can be referenced as Medium Motor and Large Motor respectively. These motors have a lot in common performance-wise and only differ in speed and torque. Based on tests performed with a provision of 7.2V power supply, here are the results: 
