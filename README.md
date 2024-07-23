@@ -6,7 +6,7 @@ This repository provides information pertaining to the robot NOVUS SPARTIAT, a s
 ## Content
 
 * `Bills of Materials` contains the list of all the items necessary to build the robot
-* `Pictorial Diagram` contains a pictorial wiring diagram of the whole robot including its components
+* `Pictorial Diagram` contains 2 pictorial wiring diagrams of the whole robot including all of its components
 * `Team Photos` contains 2 photos of the team: an official one and one funny photo
 * `Vehicle Photos` contains 6 photos of the vehicle from every sides
 * `Video Performance` contains 2 video links showcasing each challenge round
