@@ -55,3 +55,17 @@ The team chose this camera to specifically detect traffic signs and their color 
 Both the SPIKE™ Distance Sensor and AISTEAM Roof Vision Module are mounted to a SPIKE™ Large Motor. This enables these two sensors to rotate from a range of angle of 0° to 180°, covering a wide part of the surrounding area of the robot. The team has done this since the limited ports of the SPIKE™ Large Hub cannot provide more room for sensors around the robot. This motor serves as a helpful tool in the detection of the walls, obstacles, and overall surroundings of the robot while it is in the game field.
 
 Another SPIKE™ Color Sensor is placed inside the shell of the robot. It is used to transfer and evaluate all of the essential data from the camera to the primary controller of the robot. It is mostly used in Obstacle Challenge Rounds, to detect the obstacles and the parking lot boundaries within the field.
+
+## 3. Power Management
+
+### 3.1.   SPIKE™ Large Hub
+The SPIKE™ Large Hub is the programmable control unit for the LEGO® sensors and motors. It serves as the location for the robot's main program and is integrated with MicroPython as the operating system. The hub features six LPF2 input/output ports and a built-in six-axis gyro sensor, which includes a three-axis accelerometer and three-axis gyroscope. Additionally, it has a built-in speaker with a maximum sound quality of 12-bit 16 KHz and can connect to devices via Bluetooth or USB Cable. The team selected this hub as the primary controller for the robot due to its comprehensive capabilities, having six (6) ports for SPIKE™ excellent motors and sensors.
+
+### 3.2.   SPIKE™ Large Hub Rechargeable Battery
+The SPIKE™ Large Hub Rechargeable Battery is a lithium-ion polymer battery designed to power the Technic Large Hub, which in turn powers all Spike motors and sensors. It can be charged inside the Hub using a micro-USB cable and can be removed easily. With a capacity of 2100 mAh and an output of 7.3V, this battery has a lifetime of over 500 cycles, meaning it can handle more than 500 charge-discharge cycles throughout its lifespan.
+
+### 3.3.   AISTEAM Controller
+This controller functions as the robot’s sub-controller and is not designed to control the robot’s movements. It receives power from a separate power source, which will be introduced later. The controller is equipped with 17 expansion interfaces and has a main frequency of 72 MHz with its shell compatible with the LEGO build system. It features an on/off button used to run the program and start the camera to do specific actions. This is where the vision and the battery module are connected, and where the program is saved.
+
+### 3.4.   AISTEAM Lithium Battery Module
+This battery serves as the power source for the AISTEAM Controller and Vision module. It has an output voltage of 7.4V, a rated capacity of 1100 mAh, maximum discharge rate of 3C, a rated charging voltage of 8.4V, and a rated charging current of 1A. The shell of this battery is compatible with the LEGO building system. Both the input and output ports of this battery are DC, and it can be charged using a dedicated 8.4V 1A charger. The following battery is directly connected to the controller of the robot.
