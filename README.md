@@ -1,7 +1,7 @@
 NOVUS SPARTIAT
 ====
 
-This repository contains engineering materials of a self-driven vehicle's model participating in the WRO Future Engineers competition in the season 2022.
+This repository provides information pertaining to the robot NOVUS SPARTIAT, a self-driving car designed and programmed by the team Novus Spartans, made for the Philippine Robotics Olympiad 2024 – Future Engineers Category. 
 
 ## Content
 
@@ -76,4 +76,4 @@ This battery serves as the power source for the AISTEAM Controller and Vision mo
 The AISTEAM Expansion Screen Module has the ability to display alphanumeric characters and basic geometric figures such as rectangles and circles. It features a 0.96-inch low-powered OLED module with a resolution of 128x64, a full-view display, and SPI communication. The shell is equipped with a high-transmitting acrylic protection board. This screen module is directly connected to the AISTEAM controller of the robot. This component is specifically used to monitor the pixel number received by the AISTEAM Vision Sensor and is displayed in the screen module. This facilitates easier debugging of unexpected issues encountered by the camera, thereby saving time for the team.
 
 ### 4.2.   AISTEAM Full-Color Light Module
-The AISTEAM Full-Color Light Module can produce light within a wide range of colors. It has a working voltage of 5V, color range of RGB 0 to 255, and a light-emitting angle of 120°. The shell of this module is compatible with the LEGO building system. This component is used to output the color of the obstacles detected by the camera, making it easier to find errors in the program and debug for the team. 
+The AISTEAM Full-Color Light Module can produce light within a wide range of colors. It has a working voltage of 5V, color range of RGB 0 to 255, and a light-emitting angle of 120°. The shell of this module is compatible with the LEGO building system. This component is used to output the color of the obstacles detected by the camera, making it easier to find errors in the program and debug for the team.
