@@ -76,4 +76,14 @@ This battery serves as the power source for the AISTEAM Controller and Vision mo
 The AISTEAM Expansion Screen Module has the ability to display alphanumeric characters and basic geometric figures such as rectangles and circles. It features a 0.96-inch low-powered OLED module with a resolution of 128x64, a full-view display, and SPI communication. The shell is equipped with a high-transmitting acrylic protection board. This screen module is directly connected to the AISTEAM controller of the robot. This component is specifically used to monitor the pixel number received by the AISTEAM Vision Sensor and is displayed in the screen module. This facilitates easier debugging of unexpected issues encountered by the camera, thereby saving time for the team.
 
 ### 4.2.   AISTEAM Full-Color Light Module
+
 The AISTEAM Full-Color Light Module can produce light within a wide range of colors. It has a working voltage of 5V, color range of RGB 0 to 255, and a light-emitting angle of 120°. The shell of this module is compatible with the LEGO building system. This component is used to output the color of the obstacles detected by the camera, making it easier to find errors in the program and debug for the team.
+
+## 5. Obstacle Management
+In order to detect the position and negotiate with the color of the obstacles, a specific strategy must be well-planned to possibly finish three (3) laps in Obstacle Challenge Rounds. The team had spent a fair amount of time considering different thoughts and ideas to efficiently manage the obstacles on the game field; always giving space for new yet excellent ideas to be added in the team’s strategy.
+
+The main strategy for the robot involves two (2) major ideas: first is giving the camera and the distance sensor the ability to rotate with the use of a SPIKE™ Large Motor, which wil be referenced as “vision motor” in this documentary. The vision motor can rotate the camera for approximately 90° in both directions starting from the middle. The rotation of the vision motor depends on the position of the robot and the color of the detected obstacles.
+
+The second major idea is programming the robot to follow three (3) possible routes based on the color of the obstacles, the position of the parking lot boundaries, and the defined driving direction of the round. Example: the driving direction is set to be clockwise; refer to the illustration below. If the detected obstacle is GREEN, the robot would follow the green arrow, near the outer wall. If the obstacle is RED, the robot would follow the red arrow, near the inner wall. Lastly, if the robot detected a GREEN obstacle, and the parking lot boundaries are located on that same section, the robot would follow the gray arrow, somewhat in between the outer and inner walls. 
+
+<img src = "https://github.com/user-attachments/assets/22d1a235-6b41-4305-a00a-393fe992f5bb">
