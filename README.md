@@ -1,7 +1,12 @@
+
+***
+
 NOVUS SPARTIAT
 ====
 
 This repository provides information pertaining to the robot NOVUS SPARTIAT, a self-driving car designed and programmed by the team Novus Spartans of the Batangas State University – The National Engineering University, made for the Philippine Robotics Olympiad 2024 – Future Engineers Category. 
+
+***
 
 ## Content
 
@@ -10,17 +15,20 @@ This repository provides information pertaining to the robot NOVUS SPARTIAT, a s
 * `Team Photos` contains 2 photos of the team: an official one and one funny photo.
 * `Vehicle Photos` contains 6 photos of the vehicle from every sides.
 * `Video Performance` contains 2 video links showcasing each challenge round.
-## 
+<br/><br/> 
 * [1. Mobility Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#1-mobility-management)
 * [2. Sense Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#2-sense-management)
 * [3. Power Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#3-power-management)
 * [4. Additional Components](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#4-additional-components)
 * [5. Obstacle Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#5-obstacle-management)
 
+***
 
 ## The Team:
 - Joseph Bernard Maala (Programmer)
 - John Angelo Bautista (Builder & Robot Handler)
+
+***
 
 ## 1. Mobility Management
 
@@ -39,6 +47,8 @@ The Medium Motor was shown to be negligibly faster than the Large Motor. However
 The robot is propelled by a rear-wheel drive transmission, where power from the rear Large Motor drives the rear wheels, propelling the robot forward or backward. Meanwhile, the Large Motor in the front is focused on steering the front wheels of the robot. This vehicle transmission setup was chosen by the team because it is commonly used in the Future Engineers Category. Additionally, it is found that RWD (rear-wheel drive) systems offer better handling compared to the front-wheel drives, which were tested by the team.
 
 For the wheels of the robot, SPIKE™ Large Wheels are incorporated for the rear driving mechanism while EV3 Small Wheels are used for the steering mechanism of the robot. These wheels have a diameter of 88 mm and 43.2 mm respectively. The team had decided to use large wheels for the driving base of the robot since larger wheels have a higher circumference value compared to the small ones, thus covering longer distances per rotation and increasing the maximum speed limit of the robot. 
+
+***
 
 ## 2. Sense Management
 
@@ -71,6 +81,8 @@ Both the SPIKE™ Distance Sensor and AISTEAM Roof Vision Module are mounted to 
 
 Another SPIKE™ Color Sensor is placed inside the shell of the robot. It is used to transfer and evaluate all of the essential data from the camera to the primary controller of the robot. It is mostly used in Obstacle Challenge Rounds, to detect the obstacles and the parking lot boundaries within the field.
 
+***
+
 ## 3. Power Management
 
 In the field of robotics, power management serves as the cornerstone that ensures the operation of an autonomous system. It serves as the brain and heart of the robot. Not only does it play a role in supplying data and energy to the various components, but it also plays a role in optimizing the overall performance of the robot.
@@ -91,6 +103,8 @@ This controller functions as the robot’s sub-controller and is not designed to
 ### 3.4.   AISTEAM Lithium Battery Module
 This battery serves as the power source for the AISTEAM Controller and Vision module. It has an output voltage of 7.4V, a rated capacity of 1100 mAh, maximum discharge rate of 3C, a rated charging voltage of 8.4V, and a rated charging current of 1A. The shell of this battery is compatible with the LEGO building system. Both the input and output ports of this battery are DC, and it can be charged using a dedicated 8.4V 1A charger. The following battery is directly connected to the controller of the camera of the robot.
 
+***
+
 ## 4. Additional Components
 
 The Novus Spartiat is not complete without these additional components. These parts help the robot itself and the programmer efficiently. Under the Additional Components section, the following components are listed:
@@ -103,6 +117,8 @@ The AISTEAM Expansion Screen Module has the ability to display alphanumeric char
 ### 4.2.   AISTEAM Full-Color Light Module
 The AISTEAM Full-Color Light Module can produce light within a wide range of colors. It has a working voltage of 5V, color range of RGB 0 to 255, and a light-emitting angle of 120°. The shell of this module is compatible with the LEGO building system. This component is used to output the color of the obstacles detected by the camera, making it easier to find errors in the program and debug for the team. 
 
+***
+
 ## 5. Obstacle Management
 In order to detect the position and negotiate with the color of the obstacles, a specific strategy must be well-planned to possibly finish three (3) laps in Obstacle Challenge Rounds. The team had spent a fair amount of time considering different thoughts and ideas to efficiently manage the obstacles on the game field; always giving space for new yet excellent ideas to be added in the team’s strategy.
 
@@ -111,3 +127,5 @@ The main strategy for the robot involves two (2) major ideas: first is giving th
 The second major idea is programming the robot to follow three (3) possible routes based on the color of the obstacles, the position of the parking lot boundaries, and the defined driving direction of the round. Example: the driving direction is set to be clockwise; refer to the illustration below. If the detected obstacle is GREEN, the robot would follow the green arrow, near the outer wall. If the obstacle is RED, the robot would follow the red arrow, near the inner wall. Lastly, if the robot detected a GREEN obstacle, and the parking lot boundaries were located on that same section, the robot would follow the gray arrow, somewhere between the outer and inner walls. 
 
 <img src = "https://github.com/user-attachments/assets/500eb94e-bbe9-4991-bf80-80a7fc3ddd98">
+
+***
