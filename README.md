@@ -6,7 +6,7 @@ NOVUS SPARTIAT
 
 This repository provides information pertaining to the robot NOVUS SPARTIAT, a self-driving car designed and programmed by the team Novus Spartans of the Batangas State University – The National Engineering University, made for the Philippine Robotics Olympiad 2024 – Future Engineers Category. 
 
-<img src = "https://github.com/user-attachments/assets/44bb3096-a6fe-497e-ab5d-eb737540ee19">
+<img src = "https://github.com/NovusSpartans/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/blob/main/Vehicle%20Photos/Main%20View%20(Novus%20Spartiat).jpg">
 
 ***
 
