@@ -10,6 +10,12 @@ This repository provides information pertaining to the robot NOVUS SPARTIAT, a s
 
 ***
 
+## The Team:
+- Joseph Bernard Maala (Programmer)
+- John Angelo Bautista (Builder & Robot Handler)
+
+***
+
 ## Content
 
 * `Bills of Materials` contains the list of all the items necessary to build the robot.
@@ -23,12 +29,6 @@ This repository provides information pertaining to the robot NOVUS SPARTIAT, a s
 * [3. Power Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#3-power-management)
 * [4. Additional Components](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#4-additional-components)
 * [5. Obstacle Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#5-obstacle-management)
-
-***
-
-## The Team:
-- Joseph Bernard Maala (Programmer)
-- John Angelo Bautista (Builder & Robot Handler)
 
 ***
 
