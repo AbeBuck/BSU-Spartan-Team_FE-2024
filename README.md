@@ -29,7 +29,7 @@ Motor selection is a crucial part of building the robot since its maneuverabilit
 
 The Medium Motor was shown to be negligibly faster than the Large Motor. However, the Large Motor was able to provide a substantial amount of power compared to its counterpart. With these pieces of  information, the team had chosen to use the Large Motor for both driving and steering management. The robot uses three (3) Large Motors, one each for driving and steering, while the other one will be discussed in the last part of Sense Management.
 
-### 1.2 Driving Mechanism 
+### 1.2 Robot Design
 The robot is propelled by a rear-wheel drive transmission, where power from the rear Large Motor drives the rear wheels, propelling the robot forward or backward. Meanwhile, the Large Motor in the front is focused on steering the front wheels of the robot. This vehicle transmission setup was chosen by the team because it is commonly used in the Future Engineers Category. Additionally, it is found that RWD (rear-wheel drive) systems offer better handling compared to the front-wheel drives, which were tested by the team.
 
 For the wheels of the robot, SPIKE™ Large Wheels are incorporated for the rear driving mechanism while EV3 Small Wheels are used for the steering mechanism of the robot. These wheels have a diameter of 88 mm and 43.2 mm respectively. The team had decided to use large wheels for the driving base of the robot since larger wheels have a higher circumference value compared to the small ones, thus covering longer distances per rotation and increasing the maximum speed limit of the robot. 
