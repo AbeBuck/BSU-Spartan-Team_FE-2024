@@ -5,17 +5,17 @@ This repository provides information pertaining to the robot NOVUS SPARTIAT, a s
 
 ## Content
 
-* [Bills of Materials](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main/Bills%20of%20Materials) contains the list of all the items necessary to build the robot.
-* [Pictorial Diagram](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main/Pictorial%20Diagram) contains 2 pictorial wiring diagrams of the whole robot including all of its components.
-* [Team Photos](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main/Team%20Photos) contains 2 photos of the team: an official one and one funny photo.
-* [Vehicle Photos](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main/Vehicle%20Photos) contains 6 photos of the vehicle from every sides.
-* [Video Performance](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main/Video%20Performance) contains 2 video links showcasing each challenge round.
-<br/><br/>
-* [1. Mobility Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#1-mobility-management) – Information about motor selection and robot design
-* [2. Sense Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#2-sense-management) – Information about the sensors used by the robot
-* [3. Power Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#3-power-management) - Information about the power source of the robot
-* [4. Additional Components](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#4-additional-components) – Information about the additional important components of the robot
-* [5. Obstacle Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#5-obstacle-management) – Information about the strategy for Obstacle Challenge Rounds
+* `Bills of Materials` contains the list of all the items necessary to build the robot.
+* `Pictorial Diagram` contains 2 pictorial wiring diagrams of the whole robot including all of its components.
+* `Team Photos` contains 2 photos of the team: an official one and one funny photo.
+* `Vehicle Photos` contains 6 photos of the vehicle from every sides.
+* `Video Performance` contains 2 video links showcasing each challenge round.
+## 
+* [1. Mobility Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#1-mobility-management)
+* [2. Sense Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#2-sense-management)
+* [3. Power Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#3-power-management)
+* [4. Additional Components](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#4-additional-components)
+* [5. Obstacle Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#5-obstacle-management)
 
 
 ## The Team:
