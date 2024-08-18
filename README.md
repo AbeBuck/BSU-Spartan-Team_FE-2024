@@ -24,7 +24,7 @@ This repository provides information pertaining to the robot NOVUS SPARTIAT, a s
 * `Vehicle Photos` contains 6 photos of the vehicle from every sides.
 * `Video Performance` contains 2 video links showcasing each challenge round.
 <br/><br/> 
-* [1. Mobility Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#1-mobility-management)
+* [1. Mobility Management](#1-mobility-management)
 * [2. Sense Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#2-sense-management)
 * [3. Power Management](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#3-power-management)
 * [4. Additional Components](https://github.com/AbeBuckRobotics/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/tree/main?tab=readme-ov-file#4-additional-components)
