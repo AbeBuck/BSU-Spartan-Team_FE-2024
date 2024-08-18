@@ -12,7 +12,7 @@ This repository provides information pertaining to the robot NOVUS SPARTIAT, a s
 
 ## The Team:
 - Joseph Bernard Maala (Programmer)
-- John Angelo Bautista (Builder & Robot Handler)
+- John Angelo Bautista (Builder)
 
 ***
 
