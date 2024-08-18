@@ -1,17 +1,21 @@
 NOVUS SPARTIAT
 ====
 
-This repository provides information pertaining to the robot NOVUS SPARTIAT, a self-driving car designed and programmed by the team Novus Spartans, made for the Philippine Robotics Olympiad 2024 – Future Engineers Category. The team consists of Joseph Bernard Maala and John Angelo Bautista.
+This repository provides information pertaining to the robot NOVUS SPARTIAT, a self-driving car designed and programmed by the team Novus Spartans of the Batangas State University – The National Engineering University, made for the Philippine Robotics Olympiad 2024 – Future Engineers Category. 
 
 ## Content
 
-* `Bills of Materials` contains the list of all the items necessary to build the robot
-* `Pictorial Diagram` contains 2 pictorial wiring diagrams of the whole robot including all of its components
-* `Team Photos` contains 2 photos of the team: an official one and one funny photo
-* `Vehicle Photos` contains 6 photos of the vehicle from every sides
-* `Video Performance` contains 2 video links showcasing each challenge round
-* `src` contains code of control software for all components which were programmed to participate in the competition
-  
+- `Bills of Materials` contains the list of all the items necessary to build the robot
+- `Pictorial Diagram` contains 2 pictorial wiring diagrams of the whole robot including all of its components
+- `Team Photos` contains 2 photos of the team: an official one and one funny photo
+- `Vehicle Photos` contains 6 photos of the vehicle from every sides
+- `Video Performance` contains 2 video links showcasing each challenge round
+- `src` contains code of control software for all components which were programmed to participate in the competition
+
+## The Team:
+- Joseph Bernard Maala (Programmer)
+- John Angelo Bautista (Builder & Robot Handler)
+
 ## 1. Mobility Management
 
 ### 1.1 Motor Selection
