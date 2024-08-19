@@ -1,4 +1,4 @@
-def colorRecognitionThreshold(greenThreshold, redThreshold, ): 
+def colorRecognitionThreshold(greenThreshold, redThreshold): 
     if  ( (get_recoColorRGB_more (0, 0, 2)> ()) and  (get_recoColorRGB_more (0, 0, 2)>get_recoColorRGB_more (0, 1, 2))):
         MakerLED_ALLColorLED (0, #0000ff);
         MakerLED_ALLColorLED (2, #0000ff);
