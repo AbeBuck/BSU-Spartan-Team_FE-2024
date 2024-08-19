@@ -11,6 +11,8 @@ This repository provides information pertaining to the robot of the Novus Sparti
 ***
 
 ## The Team:
+
+
 - Joseph Bernard Maala (Programmer)
 - John Angelo Bautista (Builder)
 
