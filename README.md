@@ -23,7 +23,7 @@ This repository provides information pertaining to the robot of the Novus Sparti
 * `Bills of Materials` contains the list of all the items necessary to build the robot.
 * `Pictorial Diagram` contains 2 pictorial wiring diagrams of the whole robot including all of its components.
 * `Team Photos` contains multiple photos of the whole team.
-* `Vehicle Chassis` contains files displaying the chassis of the vehicle.
+* `Vehicle Chassis` contains 6 photos of the chassis of the vehicle from every sides.
 * `Vehicle Photos` contains 6 photos of the vehicle from every sides and 1 main photo of the vehicle.
 * `Video Performance` contains 2 video links showcasing each challenge round.
 <br/><br/> 
