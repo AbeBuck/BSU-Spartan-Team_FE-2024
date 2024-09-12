@@ -20,14 +20,6 @@ This repository provides information pertaining to the robot of the Novus Sparti
 
 ## Content
 
-* `Bills of Materials` contains the list of all the items necessary to build the robot.
-* `Pictorial Diagram` contains 2 pictorial wiring diagrams of the whole robot including all of its components.
-* `Source Code` contains 3 files of program for Obstacle Management.
-* `Team Photos` contains multiple photos of the whole team.
-* `Vehicle Chassis` contains 6 photos of the chassis of the vehicle from every sides.
-* `Vehicle Photos` contains 6 photos of the vehicle from every sides and 1 main photo of the vehicle.
-* `Video Performance` contains 2 video links showcasing each challenge round.
-<br/><br/> 
 * [1. Mobility Management](#1-mobility-management)
 * [2. Sense Management](#2-sense-management)
 * [3. Power Management](#3-power-management)
