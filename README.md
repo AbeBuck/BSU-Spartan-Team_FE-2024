@@ -28,6 +28,20 @@ This repository provides information pertaining to the robot of the Novus Sparti
 
 ***
 
+## Robot Specifications
+Below are the specifications of Novus Spartiat:
+- **Dimensions**: 200mm (L) x 300mm (W) x 300mm (H)
+- **Weight**: 1280g
+- **Speed**: 
+- **Turning Radius**: >100mm
+- **Working Voltage**: 8.4V
+- **Maximum Steer**:
+- **Steering Torque**: 
+- **Drive System**: Rear-wheel drive
+- **Material**:
+
+***
+
 ## 1. Mobility Management
 
 ### 1.1 Motor Selection
