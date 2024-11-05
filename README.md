@@ -45,7 +45,7 @@ Below are the specifications of Novus Spartiat:
 ## 1. Mobility Management
 
 ### 1.1 Motor Selection
-Motor selection is a crucial part of building the robot since its maneuverability highly depends on it. LEGO® Education SPIKE™ Prime Set has two (2) available motors: Medium Angluar Motor and Large Angular Motor, which can be referenced as Medium Motor and Large Motor respectively. These motors have a lot in common performance-wise and only differ in speed and torque. Based on tests performed with a provision of 7.2V power supply, here are the results: 
+Motor selection is a crucial part of building the robot since its maneuverability highly depends on it. LEGO® Education SPIKE™ Prime Set has two (2) available motors: Medium Angular Motor and Large Angular Motor, which can be referenced as Medium Motor and Large Motor respectively. These motors have a lot in common performance-wise and only differ in speed and torque. Based on tests performed with a provision of 7.2V power supply, here are the results: 
 <br/>
 
     Medium Motor                    Large Motor
