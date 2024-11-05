@@ -62,7 +62,7 @@ Motor selection is a crucial part of building the robot since its maneuverabilit
 
     RPM – rotations per minute, Ncm – newton centimeter
 
-The Medium Motor was shown to be negligibly faster than the Large Motor. However, the Large Motor was able to provide a substantial amount of power compared to its counterpart. With these pieces of  information, the team had chosen to use the Large Motor for both driving and steering management. The robot uses three (3) Large Motors, one each for driving and steering, while the other one will be discussed in the last part of Sense Management.
+The Medium Motor was shown to be negligibly faster than the Large Motor. However, the Large Motor was able to provide a substantial amount of power compared to its counterpart. With these pieces of  information, the team had chosen to use the Large Motor for both driving and steering management. The robot uses two (2) Large Motors for its mobility, one each for driving and steering.
 
 ### 1.2 Robot Design
 
@@ -124,20 +124,6 @@ This controller functions as the robot’s sub-controller and is not designed to
 
 ### 3.4.   AISTEAM Lithium Battery Module
 This battery serves as the power source for the AISTEAM Controller and Vision module. It has an output voltage of 7.4V, a rated capacity of 1100 mAh, maximum discharge rate of 3C, a rated charging voltage of 8.4V, and a rated charging current of 1A. The shell of this battery is compatible with the LEGO building system. Both the input and output ports of this battery are DC, and it can be charged using a dedicated 8.4V 1A charger. The following battery is directly connected to the controller of the camera of the robot.
-
-***
-
-## 4. Additional Components
-
-The Novus Spartiat is not complete without these additional components. These parts help the robot itself and the programmer efficiently. Under the Additional Components section, the following components are listed:
-
-<img src = "https://github.com/user-attachments/assets/26991092-bc56-4b97-88a8-6a9766725791">
-
-### 4.1.   AISTEAM Expansion Screen Module
-The AISTEAM Expansion Screen Module has the ability to display alphanumeric characters and basic geometric figures such as rectangles and circles. It features a 0.96-inch low-powered OLED module with a resolution of 128x64, a full-view display, and SPI communication. The shell is equipped with a high-transmitting acrylic protection board. This screen module is directly connected to the AISTEAM controller of the robot. This component is specifically used to monitor the pixel number received by the AISTEAM Vision Sensor and is displayed in the screen module. This facilitates easier debugging of unexpected issues encountered by the camera, thereby saving time for the team.
-
-### 4.2.   AISTEAM Full-Color Light Module
-The AISTEAM Full-Color Light Module can produce light within a wide range of colors. It has a working voltage of 5V, color range of RGB 0 to 255, and a light-emitting angle of 120°. The shell of this module is compatible with the LEGO building system. This component is used to output the color of the obstacles detected by the camera, making it easier to find errors in the program and debug for the team. 
 
 ***
 
