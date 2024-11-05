@@ -20,6 +20,14 @@ This repository provides information pertaining to the robot of the Novus Sparti
 
 ## Content
 
+* `Bills of Materials` contains the list of all the items necessary to build the robot.
+* `Pictorial Diagram` contains 2 pictorial wiring diagrams of the whole robot including all of its components.
+* `Source Code` contains 3 files of program for Obstacle Management.
+* `Team Photos` contains multiple photos of the whole team.
+* `Vehicle Chassis` contains 6 photos of the chassis of the vehicle from every sides.
+* `Vehicle Photos` contains 6 photos of the vehicle from every sides and 1 main photo of the vehicle.
+* `Video Performance` contains 2 video links showcasing each challenge round.
+<br/><br/> 
 * [1. Mobility Management](#1-mobility-management)
 * [2. Sense Management](#2-sense-management)
 * [3. Power Management](#3-power-management)
@@ -30,22 +38,22 @@ This repository provides information pertaining to the robot of the Novus Sparti
 
 ## Robot Specifications
 Below are the specifications of Novus Spartiat:
-- **Dimensions**: 200mm (L) x 300mm (W) x 300mm (H)
-- **Weight**: 1280g
-- **Speed**: 
+- **Dimensions**: 290mm (L) x 175mm (W) x 215mm (H)
+- **Weight**: ?
+- **Speed**: ?
 - **Turning Radius**: >100mm
-- **Working Voltage**: 8.4V
-- **Maximum Steer**:
-- **Steering Torque**: 
-- **Drive System**: Rear-wheel drive
-- **Material**:
+- **Working Voltage**: 7.6V–8.3V
+- **Maximum Steer**: ?
+- **Steering Torque**: ?
+- **Drive System**: Rear-wheel drive (RWD)
+- **Material**: LEGO® Technic Bricks
 
 ***
 
 ## 1. Mobility Management
 
 ### 1.1 Motor Selection
-Motor selection is a crucial part of building the robot since its maneuverability highly depends on it. LEGO® Education SPIKE™ Prime Set has two (2) available motors: Medium Angular Motor and Large Angular Motor, which can be referenced as Medium Motor and Large Motor respectively. These motors have a lot in common performance-wise and only differ in speed and torque. Based on tests performed with a provision of 7.2V power supply, here are the results: 
+Motor selection is a crucial part of building the robot since its maneuverability highly depends on it. LEGO® Education SPIKE™ Prime Set has two (2) available motors: Medium Angluar Motor and Large Angular Motor, which can be referenced as Medium Motor and Large Motor respectively. These motors have a lot in common performance-wise and only differ in speed and torque. Based on tests performed with a provision of 7.2V power supply, here are the results: 
 <br/>
 
     Medium Motor                    Large Motor
