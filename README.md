@@ -46,7 +46,7 @@ Below are the specifications of Novus Spartiat:
 - **Maximum Steer**: ?
 - **Steering Torque**: ?
 - **Drive System**: Rear-wheel drive (RWD)
-- **Material**: LEGO® Technic Bricks
+- **Material**: LEGO® Technic 
 
 ***
 
@@ -67,6 +67,12 @@ The SPIKE™ Medium Motor was shown to be negligibly faster than the SPIKE™ La
 ### 1.2 Robot Driving Mechanism
 
 The robot uses a parallel steering geometry; a front SPIKE™ Large Motor steers the front wheels of the robot parallel to each other. Meanwhile, the robot is propelled by a rear-wheel drive (RWD) transmission , where power from the rear SPIKE™ Large Motor drives the rear wheels, propelling the robot forward or backward. This steering geometry and transmission setup was chosen by the team because it is commonly used in the Future Engineers Category. Additionally, the team experimented and concluded that the RWD system offer better handling of the robot compared to the front-wheel drive (FWD).
+
+### 1.3. Robot Design
+
+For the wheels of the robot, SPIKE™ Large Wheels are incorporated for the rear driving mechanism while EV3 Small Wheels are used for the steering mechanism of the robot. These wheels have a diameter of 88 mm and 43.2 mm respectively. The team decided to use large wheels for the robot's driving base since larger wheels have a higher circumference value compared to the small ones, thus covering longer distances per rotation and increasing the maximum speed limit of the robot. 
+
+As for the weight distribution of the robot, the weight is focused on the rear side of the robot since this is where the driven wheels of the robot are. This is done through the placement of the robot's microcontrollers on the rear side of the robot. This weight distribution should enhance the traction of the said wheels, preventing them from slipping. 
 
 ***
 
