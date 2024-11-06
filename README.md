@@ -91,12 +91,7 @@ This distance sensor is placed on the front of the robot, which is used to deter
 ### 2.3.   SPIKE™ Gyro Sensor
 The built-in SPIKE™ Gyro Sensor can keep track of the angle the hub is currently facing. It consists of a three-axis accelerometer and three-axis gyroscope. The gyroscope part records the change of rotation of the hub and measures the total angle of rotation in degrees, enabling it to return the hub’s exact rotation angle around a given axis. Combined with the accelerometer, it allows the hub to determine its orientation and acceleration along a given axis. 
 
-The robot relies on this gyro sensor for most of its movements, facilitating its accurate navigation across the whole game field. It enables the robot to follow a specific angle when moving, thus making it drive straight and turn into a particular angle efficiently.
-
-### 2.4.   AISTEAM Roof Vision Module
-The AISTEAM Roof Vision Module is capable of utilizing artificial intelligence (AI) algorithms to analyze and interpret visual data from the camera. It has a working voltage of 5V and a viewing angle of 72°. Additionally, it can achieve a maximum resolution of 320x240 pixels and supports a maximum code rate of 30 mbps. Its structure supports height and pitch angle adjustment, allowing it to face in different ways; and its shell is somewhat compatible with the LEGO construction system. It can perform various tasks such as tracking of multiple color blocks (up to 4 simultaneously), and processing of visual custom data.Due to this, it offers a broad range of AI vision applications, including LAB threshold debugging, template matching, visual line inspection, and visual range operations. It has the capability to identify and locate specific objects within an image and measure their exact position. 
-
-The team chose this camera to specifically detect traffic signs and their color in Obstacle Challenge Rounds. This allows the robot to keep itself to the right side of the track  if a red pillar is detected and to the left side of the track if it is a green pillar. In addition to that, this camera is also used to detect the parking lot boundaries, making sure that the robot must not touch these randomly placed parking lot limitations. 
+The robot relies on this gyro sensor for most of its movements, facilitating its accurate navigation across the whole game field. It enables the robot to follow a specific angle when moving, thus making it drive straight and turn into a particular angle efficiently. 
 
 ### 2.5.   Additional Information
 Both the SPIKE™ Distance Sensor and AISTEAM Roof Vision Module are mounted to a SPIKE™ Large Motor. This enables these two sensors to rotate from a range of angle of 0° to 180°, covering a wide part of the surrounding area of the robot. The team has done this since the limited ports of the SPIKE™ Large Hub cannot provide more room for sensors around the robot. This motor serves as a helpful tool in the detection of the walls, obstacles, and overall surroundings of the robot while it is in the game field.
@@ -118,12 +113,6 @@ The SPIKE™ Large Hub serves as the primary controller of the robot, controllin
 
 ### 3.2.   SPIKE™ Large Hub Rechargeable Battery
 The SPIKE™ Large Hub Rechargeable Battery is a lithium-ion polymer battery designed to power the Technic Large Hub, which in turn powers all Spike motors and sensors. It can be charged inside the Hub using a micro-USB cable and can be removed easily. With a capacity of 2100 mAh and an output of 7.3V, this battery has a lifetime of over 500 cycles, meaning it can handle more than 500 charge-discharge cycles throughout its lifespan.
-
-### 3.3.   AISTEAM Controller
-This controller functions as the robot’s sub-controller and is not designed to control the robot’s movements. It receives power from a separate power source, which will be introduced later. The controller is equipped with 17 expansion interfaces and has a main frequency of 72 MHz with its shell compatible with the LEGO build system. It features an on/off button used to run the program and start the camera to do specific actions. This is where the vision and the battery module are connected, and where the program is saved.
-
-### 3.4.   AISTEAM Lithium Battery Module
-This battery serves as the power source for the AISTEAM Controller and Vision module. It has an output voltage of 7.4V, a rated capacity of 1100 mAh, maximum discharge rate of 3C, a rated charging voltage of 8.4V, and a rated charging current of 1A. The shell of this battery is compatible with the LEGO building system. Both the input and output ports of this battery are DC, and it can be charged using a dedicated 8.4V 1A charger. The following battery is directly connected to the controller of the camera of the robot.
 
 ***
 
