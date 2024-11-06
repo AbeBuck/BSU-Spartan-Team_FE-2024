@@ -53,7 +53,7 @@ Below are the specifications of Novus Spartiat:
 ## 1. Mobility Management
 
 ### 1.1 Motor Selection
-Motor selection is a crucial part of building the robot since its maneuverability highly depends on it. LEGO® Education SPIKE™ Prime Set has two (2) available motors: Medium Angluar Motor and Large Angular Motor, which can be referenced as Medium Motor and Large Motor respectively. These motors have a lot in common performance-wise and only differ in speed and torque. Based on tests performed with a provision of 7.2V power supply, here are the results: 
+Motor selection is a crucial part of building the robot since its maneuverability highly depends on it. LEGO® Education SPIKE™ Prime Set has two (2) available motors: Medium Angular Motor and Large Angular Motor, which will be referenced as Medium Motor and Large Motor respectively. These motors have a lot in common performance-wise and only differ in speed and torque. Based on tests performed with a provision of 7.2V power supply, here are the results: 
 <br/>
 
     Medium Motor                    Large Motor
@@ -62,13 +62,11 @@ Motor selection is a crucial part of building the robot since its maneuverabilit
 
     RPM – rotations per minute, Ncm – newton centimeter
 
-The Medium Motor was shown to be negligibly faster than the Large Motor. However, the Large Motor was able to provide a substantial amount of power compared to its counterpart. With these pieces of  information, the team had chosen to use the Large Motor for both driving and steering management. The robot uses two (2) Large Motors for its mobility, one each for driving and steering.
+The Medium Motor was shown to be negligibly faster than the Large Motor. However, the Large Motor was able to provide a substantial amount of power compared to its counterpart. With these pieces of  information, the team had chosen to use Large Motors for both driving and steering management, using two (2) Large Motors in total for the mobility of the robot. 
 
-### 1.2 Robot Design
+### 1.2 Robot Driving Mechanism
 
-The robot is propelled by a rear-wheel drive transmission, where power from the rear Large Motor drives the rear wheels, propelling the robot forward or backward. Meanwhile, the Large Motor in the front is focused on steering the front wheels of the robot. This vehicle transmission setup was chosen by the team because it is commonly used in the Future Engineers Category. Additionally, it is found that RWD (rear-wheel drive) systems offer better handling compared to the front-wheel drives, which were tested by the team.
-
-For the wheels of the robot, SPIKE™ Large Wheels are incorporated for the rear driving mechanism while EV3 Small Wheels are used for the steering mechanism of the robot. These wheels have a diameter of 88 mm and 43.2 mm respectively. The team had decided to use large wheels for the driving base of the robot since larger wheels have a higher circumference value compared to the small ones, thus covering longer distances per rotation and increasing the maximum speed limit of the robot. 
+The robot uses a parallel steering geometry; a Large Motor steers the front wheels of the robot parallel to each other. Meanwhile, the robot is propelled by a rear-wheel drive (RWD) transmission , where power from the rear Large Motor drives the rear wheels, propelling the robot forward or backward. This steering geometry and transmission setup was chosen by the team because it is commonly used in the Future Engineers Category. Additionally, the team experimented and concluded that the RWD system offer better handling of the robot compared to the front-wheel drive (FWD).
 
 ***
 
