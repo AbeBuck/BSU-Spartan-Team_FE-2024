@@ -1,10 +1,10 @@
 
 ***
 
-NOVUS SPARTIAT
+BSU Spartan Team
 ====
 
-This repository provides information pertaining to the robot of the Novus Spartiat Team, a self-driving car designed and programmed by students of the Batangas State University – The National Engineering University, made for the Philippine Robotics Olympiad 2024 – Future Engineers Category. 
+This repository provides information pertaining to the robot of the BSU Spartan Team, a self-driving car designed and programmed by delegates from the Philippines, made for the World Robot Olympiad™ 2024 – Future Engineers Category (Self-Driving Cars) with the theme "Earth Allies". 
 
 <img src = "https://github.com/NovusSpartans/NOVUS-SPARTIAT_BatStateUTNEU_Future-Engineers-2024/blob/main/Vehicle%20Photos/Main%20View%20(Novus%20Spartiat).jpg">
 
@@ -36,7 +36,7 @@ This repository provides information pertaining to the robot of the Novus Sparti
 ***
 
 ## Robot Specifications
-Below are the specifications of Novus Spartiat:
+Below are the specifications of the BSU Spartan Team's robot:
 - **Dimensions**: 290mm (L) x 175mm (W) x 215mm (H)
 - **Weight**: ?
 - **Speed**: ?
@@ -122,6 +122,7 @@ The SPIKE™ Large Hub Rechargeable Battery is a lithium-ion polymer battery des
 ***
 
 ## 4. Obstacle Management
+
 In order to detect the position and negotiate with the color of the obstacles, a specific strategy must be well-planned to possibly finish three (3) laps in Obstacle Challenge Rounds. The team had spent a fair amount of time considering different thoughts and ideas to efficiently manage the obstacles on the game field; always giving space for new yet excellent ideas to be added in the team’s strategy.
 
 The main strategy for the robot involves two (2) major ideas: first is giving the camera and the distance sensor the ability to rotate with the use of a SPIKE™ Large Motor, which wil be referenced as “vision motor” in this documentary. The vision motor can rotate both the camera and distance sensor for approximately 90° in both directions starting from the middle. The rotation of the vision motor depends on the position of the robot and the color of the detected obstacles.
@@ -131,3 +132,7 @@ The second major idea is programming the robot to follow three (3) possible rout
 <img src = "https://github.com/user-attachments/assets/500eb94e-bbe9-4991-bf80-80a7fc3ddd98">
 
 ***
+
+## 5. Recommendations
+
+The robot has come a long way since its development, yet there are still areas where it can be refined and optimized. The team first assessed the limitations of the robot to identify possible recommendations that should address these current limitations and anticipate future challenges. These recommendations aim to enhance the overall performance, reliability, and functionality of the robot.
