@@ -31,8 +31,7 @@ This repository provides information pertaining to the robot of the Novus Sparti
 * [1. Mobility Management](#1-mobility-management)
 * [2. Sense Management](#2-sense-management)
 * [3. Power Management](#3-power-management)
-* [4. Additional Components](#4-additional-components)
-* [5. Obstacle Management](#5-obstacle-management)
+* [4. Obstacle Management](#4-obstacle-management)
 
 ***
 
