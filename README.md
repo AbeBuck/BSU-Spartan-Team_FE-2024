@@ -122,7 +122,7 @@ The SPIKE™ Large Hub Rechargeable Battery is a lithium-ion polymer battery des
 
 ***
 
-## 5. Obstacle Management
+## 4. Obstacle Management
 In order to detect the position and negotiate with the color of the obstacles, a specific strategy must be well-planned to possibly finish three (3) laps in Obstacle Challenge Rounds. The team had spent a fair amount of time considering different thoughts and ideas to efficiently manage the obstacles on the game field; always giving space for new yet excellent ideas to be added in the team’s strategy.
 
 The main strategy for the robot involves two (2) major ideas: first is giving the camera and the distance sensor the ability to rotate with the use of a SPIKE™ Large Motor, which wil be referenced as “vision motor” in this documentary. The vision motor can rotate both the camera and distance sensor for approximately 90° in both directions starting from the middle. The rotation of the vision motor depends on the position of the robot and the color of the detected obstacles.
