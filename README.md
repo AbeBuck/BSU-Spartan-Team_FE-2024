@@ -32,6 +32,7 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 * [2. Sense Management](#2-sense-management)
 * [3. Power Management](#3-power-management)
 * [4. Obstacle Management](#4-obstacle-management)
+* [5. Recommendations](#5-recommendations)
 
 ***
 
@@ -136,3 +137,10 @@ The second major idea is programming the robot to follow three (3) possible rout
 ## 5. Recommendations
 
 The robot has come a long way since its development, yet there are still areas where it can be refined and optimized. The team first assessed the limitations of the robot to identify possible recommendations that should address these current limitations and anticipate future challenges. These recommendations aim to enhance the overall performance, reliability, and functionality of the robot.
+
+### 5.1.  Mobility Management
+
+- Incorporate a differential gear into the robot's driving mechanism for smooth and stable turns by letting the wheels rotate at different speeds. This is important since for instance, during a right turn, the left wheel, being farther from the center of the turn, must cover a larger distance along the circular path than the right wheel within the same duration. 
+- Try other types of steering geometry, particularly the Ackerman steering mechanism which allows a car to turn while avoiding tire slip. Though it is not that easy to implement, it should allow smoother and sharper turns if incorporated correctly, allowing the robot for a wider range of movements.
+- Test the capability of all-wheel drive (AWD) transmission which may improve the speed, acceleration, and stability of the robot. This is due to the fact that it distributes power across all four wheels, reducing the chance of wheels losing traction at high acceleration. However, it should be taken into consideration that AWD systems typically consumes more weight than RWD, which can reduce the maximum speed of the robot. 
+- Select or develop custom wheels with appropriate dimensions and proper tires for better traction on the game field. This would lessen tire slip, improving the precision of the motor encoders thus enhancing the consistency of the robot.
