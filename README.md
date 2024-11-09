@@ -146,7 +146,7 @@ The pixels of the image from the camera turn white if it is within range of the 
 ```py
 gBlobs = img.find_blobs([_GREEN], roi = [0, 0, 320, 240], pixels_threshold = 150)
 rBlobs = img.find_blobs([_RED], roi = [80, 0, 160, 240], pixels_threshold = 250)
-# roi = region of interest, pixels_threshold = minimum pixel count
+# roi = region of interest; pixels_threshold = minimum pixel count
 ```
 
 ### 4.2 Obstacle Strategy
