@@ -32,7 +32,8 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 * [2. Sense Management](#2-sense-management)
 * [3. Power Management](#3-power-management)
 * [4. Obstacle Management](#4-obstacle-management)
-* [5. Recommendations](#5-recommendations)
+* [5. Engineering Factor](#5-engineering-factor)
+* [6. Recommendations](#6-recommendations)
 
 ***
 
