@@ -57,10 +57,9 @@ Below are the specifications of the BSU Spartan Team's robot:
 Motor selection is a crucial part of building the robot since its maneuverability highly depends on it. LEGO® Education SPIKE™ Prime Set has two (2) available motors: SPIKE™ Medium Angular Motor and SPIKE™ Large Angular Motor, which will be referenced as SPIKE™ Medium Motor and SPIKE™ Large Motor respectively. These motors have a lot in common performance-wise and only differ in speed and torque. Based on tests performed with a provision of 7.2V power supply, here are the results: 
 <br/>
 
-| SPIKE™ Medium Motor                 | SPIKE™ Large Motor              |
-| ----------------------------------- | ------------------------------- |
-| Speed: 135 RPM to 185 RPM           | Speed: 135 RPM to 175 RPM       |
-| Torque: 3.5 Ncm to 18 Ncm           | Torque: 8 Ncm to 25 Ncm         |
+    SPIKE™ Medium Motor                SPIKE™ Large Motor              
+      Speed: 135 RPM to 185 RPM          Speed: 135 RPM to 175 RPM
+      Torque: 3.5 Ncm to 18 Ncm          Torque: 8 Ncm to 25 Ncm
 
 <sub> RPM – rotations per minute, Ncm – newton centimeter </sub>
 
@@ -136,16 +135,19 @@ In order to detect the position and negotiate with the color of the obstacles, a
 ### 4.1 Obstacle Detection
 The camera is programmed to use LAB thresholds to identify the color of the traffic signs, which should be either green or red. A proper given threshold can be obtained with different ways, but trial and error should be enough and being familiarized with the LAB color space could help. Here are the LAB thresholds of the team for the obstacles:
 
-    _GREEN = const((0, 100, -128, -10, 20, 127))
-    _RED = const((0, 100, 7, 127, -10, 127))
-    # format: (Lmin, Lmax, Amin, Amax, Bmin, Bmax)
+```py
+_GREEN = const((0, 100, -128, -10, 20, 127))
+_RED = const((0, 100, 7, 127, -10, 127))
+# format: (Lmin, Lmax, Amin, Amax, Bmin, Bmax)
+```
     
 The pixels of the image from the camera turn white if it is within range of the given LAB threshold, else they turn black. The `find_blobs()` function of the `image` module from is used to detect the color of the traffic signs.
 
-    gBlobs = img.find_blobs([_GREEN], roi = [0, 0, 320, 240], pixels_threshold = 150)
-    rBlobs = img.find_blobs([_RED], roi = [80, 0, 160, 240], pixels_threshold = 250)
-    # roi = region of interest, pixels_threshold = minimum pixel count
-
+```py
+gBlobs = img.find_blobs([_GREEN], roi = [0, 0, 320, 240], pixels_threshold = 150)
+rBlobs = img.find_blobs([_RED], roi = [80, 0, 160, 240], pixels_threshold = 250)
+# roi = region of interest, pixels_threshold = minimum pixel count
+```
 
 ### 4.2 Obstacle Strategy
 
