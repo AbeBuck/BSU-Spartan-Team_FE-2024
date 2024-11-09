@@ -57,6 +57,11 @@ Below are the specifications of the BSU Spartan Team's robot:
 Motor selection is a crucial part of building the robot since its maneuverability highly depends on it. LEGO® Education SPIKE™ Prime Set has two (2) available motors: SPIKE™ Medium Angular Motor and SPIKE™ Large Angular Motor, which will be referenced as SPIKE™ Medium Motor and SPIKE™ Large Motor respectively. These motors have a lot in common performance-wise and only differ in speed and torque. Based on tests performed with a provision of 7.2V power supply, here are the results: 
 <br/>
 
+| SPIKE™ Medium Motor                 | SPIKE™ Large Motor              |
+| ----------------------------------- | ------------------------------- |
+| Speed: 135 RPM to 185 RPM           | Speed: 135 RPM to 175 RPM       |
+| Torque: 3.5 Ncm to 18 Ncm           | Torque: 8 Ncm to 25 Ncm         |
+
     SPIKE™ Medium Motor            SPIKE™ Large Motor
      Speed: 135 RPM to 185 RPM       Speed: 135 RPM to 175 RPM
      Torque: 3.5 Ncm to 18 Ncm       Torque: 8 Ncm to 25 Ncm
