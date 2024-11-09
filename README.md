@@ -62,11 +62,7 @@ Motor selection is a crucial part of building the robot since its maneuverabilit
 | Speed: 135 RPM to 185 RPM           | Speed: 135 RPM to 175 RPM       |
 | Torque: 3.5 Ncm to 18 Ncm           | Torque: 8 Ncm to 25 Ncm         |
 
-    SPIKE™ Medium Motor            SPIKE™ Large Motor
-     Speed: 135 RPM to 185 RPM       Speed: 135 RPM to 175 RPM
-     Torque: 3.5 Ncm to 18 Ncm       Torque: 8 Ncm to 25 Ncm
-
-    RPM – rotations per minute, Ncm – newton centimeter
+<sub> RPM – rotations per minute, Ncm – newton centimeter </sub>
 
 The SPIKE™ Medium Motor was shown to be negligibly faster than the SPIKE™ Large Motor. However, the SPIKE™ Large Motor was able to provide a substantial amount of power compared to its counterpart. With these pieces of  information, the team had chosen to use SPIKE™ Large Motors for both driving and steering management, using two (2) SPIKE™ Large Motors in total for the mobility of the robot. 
 
