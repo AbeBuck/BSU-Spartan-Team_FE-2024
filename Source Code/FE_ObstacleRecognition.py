@@ -42,13 +42,6 @@ while True:
             rPix = r.pixels()
             rBlob = r
 
-#        if ((r.h() > r.w() or (r.y() + r.h()) == 240) and r.pixels() > rPix and r.density() > 0.7):
-#            rPix = r.pixels()
-#            rBlob = r
-
-#    try: print(rBlob.density(), "\t", rBlob.compactness(), "\t", rBlob.solidity())
-#    except: pass
-
     img.draw_rectangle([80, 0, 160, 240], thickness = 2)
 
     if (rBlob != None):
