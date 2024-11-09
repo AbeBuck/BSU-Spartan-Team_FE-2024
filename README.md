@@ -131,18 +131,30 @@ The second major idea is programming the robot to follow three (3) possible rout
 
 ***
 
-## 5. Recommendations
+## 5. Engineering Factor
+
+The whole physical structure of the robot was completely designed and manufactured by the team out of LEGO® Technic. While there are standard off-the-shelf electrical components such as motors and sensors for the robot's functionality, the robot's design remains unique, embodying innovative features that set it apart from typical robots. 
+
+In order to maximize the functionality of the camera and distance sensor, the robot is equipped with a SPIKE™ Large Motor that allows these sensors to rotate for approximately 135° in both directions starting from the middle. This rotating capability enables the sensors to capture a wider view of the robot's surroundings, enhancing the robot's ability to detect and navigate through obstacles and the whole game field. 
+
+The robot is equipped with free wheels on its sides, allowing for uninterrupted movements when it is about to encounter a wall at an angle. Normally, the robot will be stuck or interrupted when a wall is approached diagonally. However, these free wheels enable the robot to glide smoothly along the surface of the wall, perfectly aligning itself to the wall. This design minimizes the possible disruptions in movement and enables the robot to adjust its position precisely. 
+
+The OpenMV Cam H7 Plus is securely placed inside the custom-designed LEGO camera mount which was uniquely designed by the team. The mount structures integrate LEGO components, making it easy to attach the camera onto the rotating large motors. This LEGO design maintains its uniformity with the overall robot and allows for convenient attachment of additional external components, such as a color sensor placed behind the camera.
+
+***
+
+## 6. Recommendations
 
 The robot has come a long way since its development, yet there are still areas where it can be refined and optimized. The team first assessed the limitations of the robot to identify possible recommendations that should address these current limitations and anticipate future challenges. These recommendations aim to enhance the overall performance, reliability, and functionality of the robot.
 
-### 5.1.  Mobility Management
+### 6.1.  Mobility Management
 
 - Incorporate a differential gear into the robot's driving mechanism for smooth and stable turns by letting the wheels rotate at different speeds. This is important since for instance, during a right turn, the left wheel, being farther from the center of the turn, must cover a larger distance along the circular path than the right wheel within the same duration. 
 - Try other types of steering geometry, particularly the Ackerman steering mechanism which allows a car to turn while avoiding tire slip. Though it is not that easy to implement, it should allow smoother and sharper turns if incorporated correctly, allowing the robot for a wider range of movements.
 - Test the capability of all-wheel drive (AWD) transmission which may improve the speed, acceleration, and stability of the robot. This is due to the fact that it distributes power across all four wheels, reducing the chance of wheels losing traction at high acceleration. However, it should be taken into consideration that AWD systems typically consumes more weight than RWD, which can reduce the maximum speed of the robot. 
 - Select or develop custom wheels with appropriate dimensions and proper tires for better traction on the game field. This would lessen tire slip, improving the precision of the motor encoders thus enhancing the consistency of the robot.
 
-### 5.2.  Power and Sense Management
+### 6.2.  Power and Sense Management
 
 - Switch to other microcontrollers such as Arduino Uno or Raspberry Pi. These microcontrollers can handle much more motors and sensors and control a wide variety of electrical components, in comparison to the team’s robot current SPIKE™ Large Hub which can only control a maximum of six (6) selected motors and sensors. An additional motor for driving should maximize the speed of the robot and more sensors should make the robot more reliable.
 - Swap to much more advanced sensors that can return accurate and precise values in a short given amount of time while still consuming a reasonable amount of power. The team wasn't able to maximize the functionality of the robot's distance sensor because of its inaccuracy, hindering the robot from  consistently reading the position of the parking lot boundaries.
