@@ -134,6 +134,17 @@ The SPIKE™ Large Hub Rechargeable Battery is a lithium-ion polymer battery des
 In order to detect the position and negotiate with the color of the obstacles, a specific strategy must be well-planned to possibly finish three (3) laps in Obstacle Challenge Rounds. The team had spent a fair amount of time considering different thoughts and ideas to efficiently manage the obstacles on the game field; always giving space for new yet excellent ideas to be added in the team's strategy.
 
 ### 4.1 Obstacle Detection
+The camera is programmed to use LAB thresholds to identify the color of the traffic signs, which should be either green or red. A proper given threshold can be obtained with different ways, but trial and error should be enough and being familiarized with the LAB color space could help. Here are the LAB thresholds of the team for the obstacles:
+
+    _GREEN = const((0, 100, -128, -10, 20, 127))
+    _RED = const((0, 100, 7, 127, -10, 127))
+    # format: (Lmin, Lmax, Amin, Amax, Bmin, Bmax)
+    
+The pixels of the image from the camera turn white if it is within range of the given LAB threshold, else they turn black. The `find_blobs()` function of the `image` module from is used to detect the color of the traffic signs.
+
+    gBlobs = img.find_blobs([_GREEN], roi = [0, 0, 320, 240], pixels_threshold = 150)
+    rBlobs = img.find_blobs([_RED], roi = [80, 0, 160, 240], pixels_threshold = 250)
+    # roi = region of interest, pixels_threshold = minimum pixel count
 
 
 ### 4.2 Obstacle Strategy
