@@ -1,4 +1,5 @@
 import image, sensor, time
+from micropython import const
 from pupremote import PUPRemoteSensor, OPENMV
 
 p = PUPRemoteSensor(power = True)
@@ -12,15 +13,13 @@ sensor.set_vflip(True)
 sensor.set_hmirror(True)
 clock = time.clock()
 
-threshold = (
-             (0, 100, -128, -10, 20, 127),      # Green
-             (0, 100, 7, 127, -10, 127)         # Red
-            )
+_GREEN = const((0, 100, -128, -10, 20, 127))
+_RED = const((0, 100, 7, 127, -10, 127))
 
 while True:
     img = sensor.snapshot()
 
-    gBlobs = img.find_blobs([threshold[0]], pixels_threshold = 150)
+    gBlobs = img.find_blobs([_GREEN], pixels_threshold = 150)
     gBlob, gPix, gCx, gCy = None, 0, 0, 0
 
     for g in gBlobs:
@@ -34,7 +33,7 @@ while True:
         gCy = gBlob.cy()
         img.draw_rectangle(gBlob.rect(), (238, 39, 55), 2)
 
-    rBlobs = img.find_blobs([threshold[1]], roi = [80, 0, 160, 240], pixels_threshold = 250)
+    rBlobs = img.find_blobs([_RED], roi = [80, 0, 160, 240], pixels_threshold = 250)
     rBlob, rPix, rCx, rCy = None, 0, 0, 0
 
     for r in rBlobs:
@@ -48,6 +47,6 @@ while True:
         rCx = rBlob.cx()
         rCy = rBlob.cy()
         img.draw_rectangle(rBlob.rect(), color = (68, 214, 44), thickness = 2)
-        
+
     p.update_channel('blob', gCx, gCy, gPix, rCx, rCy, rPix)
     p.process()
