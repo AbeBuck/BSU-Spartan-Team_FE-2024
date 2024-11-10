@@ -141,7 +141,7 @@ _RED = const((0, 100, 7, 127, -10, 127))
 # format: (Lmin, Lmax, Amin, Amax, Bmin, Bmax)
 ```
     
-The pixels of the image from the camera turn white if it is within range of the given LAB threshold, else they turn black. The `find_blobs()` function of the `image` module from is used to detect the color of the traffic signs.
+The pixels from the image that is read by the camera turn white if they are within the range of the given LAB threshold, else they turn black. The `find_blobs()` function of the `image` module is used to detect these converted pixels. 
 
 ```py
 gBlobs = img.find_blobs([_GREEN], roi = [0, 0, 320, 240], pixels_threshold = 150)
@@ -161,7 +161,7 @@ rCx = rBlob.cx()
 rCy = rBlob.cy()
 ```
 
-Lastly, the necessary data from the camera must be transferred to the microcontroller in order to determine what does the robot need to do. This is done with the use of external libraries pupremote.py and pupremote_hub.py made by AntonsMindstorms; the former is used to send the data from the camera while the latter is used to receive the data to the microcontroller.
+Lastly, the necessary data from the camera must be transferred to the microcontroller in order to determine what does the robot need to do. This is done with the use of external libraries `pupremote.py` and `pupremote_hub.py` made by AntonsMindstorms; the former is used to send the data from the camera while the latter is used to receive the data to the microcontroller.
 
 ```py
 # send data from OpenMV Cam H7 Plus to SPIKE™ Large Hub
