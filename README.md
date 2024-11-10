@@ -12,13 +12,12 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 
 ## The Team:
 
-
 - Joseph Bernard Maala (Programmer)
 - John Angelo Bautista (Builder)
 
 ***
 
-## Content
+## Content of Repository
 
 * `Bills of Materials` contains the list of all the items necessary to build the robot.
 * `Pictorial Diagram` contains 2 pictorial wiring diagrams of the whole robot including all of its components.
@@ -152,11 +151,11 @@ rBlobs = img.find_blobs([_RED], roi = [80, 0, 160, 240], pixels_threshold = 250)
 The necessary data from each colored traffic signs is saved, including the x and y coordinates of their centroid as well as their pixel number. These values are saved to determine the relative position of the traffic signs in respect to the position of the robot.
 
 ```py
-gPix = gBlob.pixels()
+gPix = g.pixels()
 gCx = gBlob.cx()
 gCy = gBlob.cy()
 
-rPix = rBlob.pixels()
+rPix = r.pixels()
 rCx = rBlob.cx()
 rCy = rBlob.cy()
 ```
@@ -209,16 +208,20 @@ The OpenMV Cam H7 Plus is securely placed inside the custom-designed LEGO camera
 
 The robot has come a long way since its development, yet there are still areas where it can be refined and optimized. The team first assessed the limitations of the robot to identify possible recommendations that should address these current limitations and anticipate future challenges. These recommendations aim to enhance the overall performance, reliability, and functionality of the robot.
 
-### 6.1.  Mobility Management
+### 6.1.   Mobility Management
 
 - Incorporate a differential gear into the robot's driving mechanism for smooth and stable turns by letting the wheels rotate at different speeds. This is important since for instance, during a right turn, the left wheel, being farther from the center of the turn, must cover a larger distance along the circular path than the right wheel within the same duration. 
 - Try other types of steering geometry, particularly the Ackerman steering mechanism which allows a car to turn while avoiding tire slip. Though it is not that easy to implement, it should allow smoother and sharper turns if incorporated correctly, allowing the robot for a wider range of movements.
 - Test the capability of all-wheel drive (AWD) transmission which may improve the speed, acceleration, and stability of the robot. This is due to the fact that it distributes power across all four wheels, reducing the chance of wheels losing traction at high acceleration. However, it should be taken into consideration that AWD systems typically consumes more weight than RWD, which can reduce the maximum speed of the robot. 
 - Select or develop custom wheels with appropriate dimensions and proper tires for better traction on the game field. This would lessen tire slip, improving the precision of the motor encoders thus enhancing the consistency of the robot.
 
-### 6.2.  Power and Sense Management
+### 6.2.   Power and Sense Management
 
 - Switch to other microcontrollers such as Arduino Uno or Raspberry Pi. These microcontrollers can handle much more motors and sensors and control a wide variety of electrical components, in comparison to the team’s robot current SPIKE™ Large Hub which can only control a maximum of six (6) selected motors and sensors. An additional motor for driving should maximize the speed of the robot and more sensors should make the robot more reliable.
 - Swap to much more advanced sensors that can return accurate and precise values in a short given amount of time while still consuming a reasonable amount of power. The team wasn't able to maximize the functionality of the robot's distance sensor because of its inaccuracy, hindering the robot from  consistently reading the position of the parking lot boundaries.
+
+### 6.3.   Obstacle Management
+
+- Consider an obstacle management with continuous detection of the obstacle rather than a single-instance detection which causes a lot of movements. In addition to that, try to apply various detection methods beyond simple pixel-based such as object tracking, which is the recognition and tracking of items along through an image processing application. This offers the advantage of consistently following a target unlike simple pixel-based methods.
 
 ***
