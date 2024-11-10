@@ -152,11 +152,11 @@ rBlobs = img.find_blobs([_RED], roi = [80, 0, 160, 240], pixels_threshold = 250)
 The necessary data from each colored traffic signs is saved, including the x and y coordinates of their centroid as well as their pixel number. These values are saved to determine the relative position of the traffic signs in respect to the position of the robot.
 
 ```py
-gPix = g.pixels()
+gPix = gBlob.pixels()
 gCx = gBlob.cx()
 gCy = gBlob.cy()
 
-rPix = r.pixels()
+rPix = rBlob.pixels()
 rCx = rBlob.cx()
 rCy = rBlob.cy()
 ```
