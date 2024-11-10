@@ -1,5 +1,4 @@
-
-***
+&nbsp;
 
 BSU Spartan Team
 ====
@@ -35,6 +34,7 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 * [5. Obstacle Management](#5-obstacle-management)
 * [6. Engineering Factor](#6-engineering-factor)
 * [7. Recommendations](#7-recommendations)
+* [8. Program Installation](#8-program-installation)
 
 ***
 
@@ -259,3 +259,5 @@ The robot has come a long way since its development, yet there are still areas w
 - Consider an obstacle management with continuous detection of the obstacle rather than a single-instance detection which causes a lot of movements. In addition to that, try to apply various detection methods beyond simple pixel-based such as object tracking, which is the recognition and tracking of items along through an image processing application. This offers the advantage of consistently following a target unlike simple pixel-based methods.
 
 ***
+
+## 8. Program Installation
