@@ -2,8 +2,8 @@ import image, sensor, time
 from micropython import const
 from pupremote import PUPRemoteSensor, OPENMV
 
-p = PUPRemoteSensor(power = True)
-p.add_channel('blob', to_hub_fmt = 'hhhhhh')
+camera = PUPRemoteSensor(power = True)
+camera.add_channel('blob', to_hub_fmt = 'hhhhhh')
 
 sensor.reset()
 sensor.set_pixformat(sensor.RGB565)
@@ -15,11 +15,12 @@ clock = time.clock()
 
 _GREEN = const((0, 100, -128, -10, 20, 127))
 _RED = const((0, 100, 7, 127, -10, 127))
+# format: (Lmin, Lmax, Amin, Amax, Bmin, Bmax)
 
 while True:
     img = sensor.snapshot()
 
-    gBlobs = img.find_blobs([_GREEN], pixels_threshold = 150)
+    gBlobs = img.find_blobs([_GREEN], roi = [0, 0, 320, 240], pixels_threshold = 150)
     gBlob, gPix, gCx, gCy = None, 0, 0, 0
 
     for g in gBlobs:
@@ -48,5 +49,5 @@ while True:
         rCy = rBlob.cy()
         img.draw_rectangle(rBlob.rect(), color = (68, 214, 44), thickness = 2)
 
-    p.update_channel('blob', gCx, gCy, gPix, rCx, rCy, rPix)
-    p.process()
+    camera.update_channel('blob', gCx, gCy, gPix, rCx, rCy, rPix)
+    camera.process()
