@@ -196,13 +196,18 @@ gtsCall = camera.call('blob')
 
 The whole program for the robot involves single-instance detection of the obstacles instead of the commonly used continuous detection for this category. This means that the robot is programmed to capture the data from the camera only at specific intervals. The team have selected this approach because it is easier for them to debug in the official competition.
 
-The main strategy for the robot involves programming it to follow three (3) possible routes which is determined based on the color of the traffic signs, the presence of the parking lot, and the defined driving direction of the challenge round. For example, the driving direction is set to Clockwise. If the detected color of traffic sign is `Green`, the robot would glide itself to the outer wall, successfully passing the traffic sign to its left. If the detected color is `Red`, the robot would glide itself to the inner wall, successfully passing the traffic sign to its right. However, if the detected color is `Green` and there is a detected presence of the parking lot, the robot would go through somewhere between the outer and inner walls. You can refer to the illustration below for better visualization; the arrows represent the route the robot would take for each possibility.
+The main strategy for the robot involves programming it to follow three (3) possible routes which are determined based on the color of the traffic signs, the presence of the parking lot, and the defined driving direction of the challenge round. For example, the driving direction is set to Clockwise. If the detected color of the traffic sign is `Green`, the robot will glide itself to the outer wall, successfully passing the traffic sign to its left. If the detected color is `Red`, the robot will glide itself to the inner wall, successfully passing the traffic sign to its right. However, if the detected color is `Green` and there is a detected presence of the parking lot, the robot will go through somewhere between the outer and inner walls. You can refer to the illustration below for better visualization; the arrows represent the route the robot would take for each possibility.
+
 
 - Green arrow — `Green` traffic sign
 - Red arrow — `Red` traffic sign
 - Gray arrow — `Green` traffic sign with presence of parking lot
 
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.2.1.png">
+
+If the robot wasn't able to detect the color of the traffic sign, the robot would follow the route to the inner wall, which is the Red traffic sign route for the Clockwise driving direction and the Green traffic sign route for the Counterclockwise driving direction. If ever the color of the traffic signs in the same straightforward sections are different, which is very likely, the robot will follow the same logic stated earlier. Here is another illustration for better visualization:
+
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.2.2.png">
 
 ***
 
