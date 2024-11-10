@@ -149,6 +149,44 @@ rBlobs = img.find_blobs([_RED], roi = [80, 0, 160, 240], pixels_threshold = 250)
 # roi = region of interest; pixels_threshold = minimum pixel count
 ```
 
+The necessary data from each colored traffic signs is saved, including the x and y coordinates of their centroid as well as their pixel number. These values are saved to determine the relative position of the traffic signs in respect to the position of the robot.
+
+```py
+gPix = g.pixels()
+gCx = gBlob.cx()
+gCy = gBlob.cy()
+
+rPix = r.pixels()
+rCx = rBlob.cx()
+rCy = rBlob.cy()
+```
+
+Lastly, the necessary data from the camera must be transferred to the microcontroller in order to determine what does the robot need to do. This is done with the use of external libraries pupremote.py and pupremote_hub.py made by AntonsMindstorms; the former is used to send the data from the camera while the latter is used to receive the data to the microcontroller.
+
+```py
+# send data from OpenMV Cam H7 Plus to SPIKE™ Large Hub
+
+from pupremote import PUPRemoteSensor, OPENMV
+
+camera = PUPRemoteSensor(power = True)
+camera.add_channel('blob', to_hub_fmt = 'hhhhhh')
+
+camera.update_channel('blob', gCx, gCy, gPix, rCx, rCy, rPix)
+camera.process()
+
+```
+
+```py
+# receive data from OpenMV Cam H7 Plus to SPIKE™ Large Hub
+
+from pupremote_hub import PUPRemoteHub
+
+camera = PUPRemoteHub(Port.E)
+camera.add_command('blob', 'hhhhhh')
+
+gtsCall = camera.call('blob')
+```
+
 ### 4.2 Obstacle Strategy
 
 <img src = "https://github.com/user-attachments/assets/500eb94e-bbe9-4991-bf80-80a7fc3ddd98">
