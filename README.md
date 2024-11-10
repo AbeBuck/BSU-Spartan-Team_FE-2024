@@ -193,7 +193,20 @@ camera.add_command('blob', 'hhhhhh')
 gtsCall = camera.call('blob')
 ```
 
-### 5.2. Obstacle Strategy
+### 5.2. Parking Lot Detection
+
+In order to determine if there is a presence of parking lot in each straightforward section, the distance sensor of the robot is used instead of the camera. The team have selected this approach since it doesn't require them to find the proper LAB threshold for the color of the parking lot. The `distance()` function of the `pupdevices` module is used to determine if there is a presence of the parking lot.
+
+```py
+print(distanceSensor.distance(), end = " ")
+
+if (distanceSensor.distance() < gpDistanceTarget):
+    return "Parking"
+else:
+    return "Normal"
+```
+
+### 5.3. Obstacle Strategy
 
 The whole program for the robot involves single-instance detection of the obstacles instead of the commonly used continuous detection for this category. This means that the robot is programmed to capture the data from the camera only at specific intervals. The team have selected this approach because it is easier for them to debug in the official competition.
 
@@ -204,11 +217,11 @@ The main strategy for the robot involves programming it to follow three (3) poss
 - Red arrow — `Red` traffic sign
 - Gray arrow — `Green` traffic sign with presence of parking lot
 
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.2.1.png">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.3.1.png">
 
 If the robot wasn't able to detect the color of the traffic sign, the robot would follow the route to the inner wall, which is the Red traffic sign route for the Clockwise driving direction and the Green traffic sign route for the Counterclockwise driving direction. If ever the color of the traffic signs in the same straightforward sections are different, which is very likely, the robot will follow the same logic stated earlier. Here is another illustration for better visualization:
 
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.2.2.png">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.3.2.png">
 
 ***
 
