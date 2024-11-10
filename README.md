@@ -20,12 +20,13 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 ## Content
 
 * `Bills of Materials` contains the list of all the items necessary to build the robot.
-* `Pictorial Diagram` contains 2 pictorial wiring diagrams of the whole robot including all of its components.
+* `Discussion Photos` contains all the images that is showcased in this file.
 * `Source Code` contains 3 files of program for Obstacle Management.
 * `Team Photos` contains multiple photos of the whole team.
 * `Vehicle Chassis` contains 6 photos of the chassis of the vehicle from every sides.
 * `Vehicle Photos` contains 6 photos of the vehicle from every sides and 1 main photo of the vehicle.
 * `Video Performance` contains 2 video links showcasing each challenge round.
+* `Wiring Diagram` contains 2 pictorial wiring diagrams of the whole robot including all of its components.
 
 ## 
 
@@ -39,16 +40,18 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 ***
 
 ## Robot Specifications
+
 Below are the specifications of the BSU Spartan Team's robot:
 - **Dimensions**: 290mm (L) x 175mm (W) x 215mm (H)
-- **Weight**: ?
-- **Speed**: ?
-- **Turning Radius**: >100mm
-- **Working Voltage**: 7.6V–8.3V
-- **Maximum Steer**: ?
-- **Steering Torque**: ?
+- **Weight**: 1.2kg?
+- **Speed**: 6.5m/s
+- **Turning Radius**: 100mm?
+- **Working Voltage**: 8.3V-7.6V
+- **Maximum Steer**: ±60°
+- **Steering Torque**: 100Ncm
 - **Drive System**: Rear-wheel drive (RWD)
-- **Material**: LEGO® Technic 
+- **Steering Geometry**: Parallel steering
+- **Material**: LEGO® Technic
 
 ***
 
