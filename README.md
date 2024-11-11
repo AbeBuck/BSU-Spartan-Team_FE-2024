@@ -279,10 +279,20 @@ The robot has come a long way since its development, yet there are still areas w
 
 ## 8. Construction Guide
 
-### 8.1 Robot Construction Guide
+### 8.1. Robot Construction Guide
+
 1. Prepare these necessary kits and equipments:
     - [LEGO® Education SPIKE™ Prime Set](https://education.lego.com/en-us/products/lego-education-spike-prime-set/45678/)
     - [LEGO® Education SPIKE™ Prime Expansion Set](https://education.lego.com/en-us/products/lego-education-spike-prime-expansion-set/45681/)
     - [LEGO® MINDSTORMS® Education EV3 Core Set](https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-core-set/5003400/)
     - [LEGO® MINDSTORMS® Education EV3 Expansion Set](https://sasbadilearning.com/product/mindstorms-education-ev3-expansion-set/)
     - [OpenMV Cam H7 Plus](https://openmv.io/products/openmv-cam-h7-plus)
+2. Follow the Building Instructions
+3. Finally, ensure that every electrical components are wired properly according to the [Pictorial Diagram](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Wiring%20Diagram/Robot%20Pictorial%20Diagram.png) of the robot.
+
+### 8.2. Program Construction Guide
+
+1. Prepare these integrated development environments (IDEs) necessary for the compilation of the program.
+   - [OpenMV IDE](https://openmv.io/pages/download)
+   - [Pybricks](https://code.pybricks.com/)
+2. Now 
