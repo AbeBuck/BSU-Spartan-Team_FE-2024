@@ -1,4 +1,3 @@
-&nbsp;
 
 BSU Spartan Team
 ====
