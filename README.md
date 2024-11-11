@@ -9,8 +9,10 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 
 ## The Team:
 
-- Joseph Bernard Maala (Programmer)
-- John Angelo Bautista (Builder)
+- Joseph Bernard Maala, 17, (Right)
+- John Angelo Bautista, 17, (Left)
+  
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_1.jpg" width = "450"> <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_2.jpg" width = "450">
 
 ***
 
@@ -27,27 +29,27 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 
 ## 
 
-* [1. Robot Specifications](#1-robot-specifications)
-* [2. Mobility Management](#2-mobility-management)
-* [3. Sense Management](#3-sense-management)
-* [4. Power Management](#4-power-management)
-* [5. Obstacle Management](#5-obstacle-management)
-* [6. Engineering Factor](#6-engineering-factor)
-* [7. Recommendations](#7-recommendations)
-* [8. Program Installation](#8-program-installation)
+1. [Robot Specifications](#1-robot-specifications)
+2. [Mobility Management](#2-mobility-management)
+3. [Sense Management](#3-sense-management)
+4. [Power Management](#4-power-management)
+5. [Obstacle Management](#5-obstacle-management)
+6. [Engineering Factor](#6-engineering-factor)
+7. [Recommendations](#7-recommendations)
+8. [Construction Guide](#8-construction-guide)
 
 ***
 
 ## 1. Robot Specifications
 
 Below are the specifications of the BSU Spartan Team's robot:
-- **Dimensions**: 290mm (L) x 175mm (W) x 215mm (H)
-- **Weight**: 1.2kg?
-- **Speed**: 6.5m/s
-- **Turning Radius**: 100mm?
-- **Working Voltage**: 8.3V–7.6V
+- **Dimensions**: 195mm (L) x 160mm (W) x 230mm (H)
+- **Weight**: 1.23kg
+- **Speed**: 6.53m/s
 - **Maximum Steer**: ±60°
 - **Steering Torque**: 100Ncm
+- **Working Voltage**: 8.3V–7.6V
+- **Turning Radius**: 100mm?
 - **Drive System**: Rear-wheel drive (RWD)
 - **Steering Geometry**: Parallel steering
 - **Material**: LEGO® Technic
