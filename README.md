@@ -113,7 +113,7 @@ The OpenMV Cam H7 Plus is a compact, low-power microcontroller board that functi
 
 The OpenMV Cam H7 Plus is equipped with an STM32H743II ARM Cortex M7 processor running at 480 MHz with 32MBs SDRAM + 1MB of SRAM and 32 MB of external flash + 2 MB of internal flash. All I/O pins output 3.3V and are 5V tolerant. Additionally, it includes a full speed USB interface to connect directly to your computer. Moreover, the camera is fitted with a 2.8 mm lens on a standard M12 lens mount and uses an 0V5640 image sensor that is capable of capturing images at resolution of 2592x1944 equivalent to 5MP images. It can run the machine vision algorithms between 25-50 FPS on 320x420 resolutions and below. 
 
-The team selected the OpenMV Cam H7 Plus to specifically detect traffic signs and their colors during the Obstacle Challenge Rounds. This enables the robot to navigate accordingly,  keeping itself to the right side of the track when a red traffic sign obstacle is detected and to the left side of the track when a green traffic sign obstacle is detected. The camera provides a more accurate detection by analyzing pixel density, which helps identify objects based on the density of color pixels detected. A higher pixel density of the closest object indicates what color it is, allowing the robot to process this information and send it through the central hub and execute the appropriate action to avoid the obstacle. Additionally, this camera helps the team to reduce false detections of the orange line present on the main field, enhancing the accuracy of the robot in identifying actual obstacles.
+The team selected the OpenMV Cam H7 Plus to specifically detect traffic signs and their colors during the Obstacle Challenge Rounds. This enables the robot to navigate accordingly,  keeping itself to the right side of the track when a red traffic sign obstacle is detected and to the left side of the track when a green traffic sign obstacle is detected. The camera provides a more accurate detection by analyzing pixel density, which helps identify objects based on the density of color pixels detected. A higher pixel density of the closest object indicates what color it is, allowing the robot to process this information and send it through the central hub and execute the appropriate action to avoid the obstacle. 
 
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/3.4.1.png?">
 
@@ -294,7 +294,7 @@ The robot has come a long way since its development, yet there are still areas w
     - [LEGO® MINDSTORMS® Education EV3 Expansion Set](https://sasbadilearning.com/product/mindstorms-education-ev3-expansion-set/)
     - [OpenMV Cam H7 Plus](https://openmv.io/products/openmv-cam-h7-plus)
 2. Follow the Building Instructions
-3. Finally, ensure that every electrical components are wired properly according to the [Pictorial Diagram](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Wiring%20Diagram/Robot%20Pictorial%20Diagram.png) of the robot.
+3. Finally, ensure that every electrical components are wired properly according to the [Pictorial Diagram](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Wiring%20Diagram/Robot%20Pictorial%20Diagram.png?) of the robot.
 
 ### 8.2. Program Construction Guide
 
