@@ -2,7 +2,6 @@
 ***
 
 # BSU Spartan Team
-====
 
 This repository provides information pertaining to the robot of the BSU Spartan Team, a self-driving car designed and programmed by delegates from the Philippines, for Future Engineers Category. 
 
