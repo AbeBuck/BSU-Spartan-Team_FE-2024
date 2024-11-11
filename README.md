@@ -20,7 +20,7 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 
 * `Bills of Materials` contains the list of all the items necessary to build the robot.
 * `Discussion Images` contains all the images that is showcased in this file.
-* `Source Code` contains 3 files of program for Obstacle Management.
+* `Source Code` contains the main and other programs of the robot.
 * `Team Photos` contains multiple photos of the whole team.
 * `Vehicle Chassis` contains 6 photos of the chassis of the vehicle from every sides.
 * `Vehicle Photos` contains 6 photos of the vehicle from every sides and 1 main photo of the vehicle.
