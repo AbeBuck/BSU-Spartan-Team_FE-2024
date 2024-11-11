@@ -8,4 +8,4 @@ This directory contains a complete inventory of the raw materials as well as the
 
 ***
 
-<img src = "">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Bills%20of%20Materials/Bills%20of%20Materials.png">
