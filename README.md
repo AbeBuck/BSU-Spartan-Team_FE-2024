@@ -11,7 +11,7 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 - Joseph Bernard Maala, 17, (Right)
 - John Angelo Bautista, 17, (Left)
   
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_1.jpg?" width = "450"> <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_2.jpg?" width = "450">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_1.jpg?" width = "400"> <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_2.jpg?" width = "400">
 
 ***
 
