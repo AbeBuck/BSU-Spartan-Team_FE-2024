@@ -12,7 +12,7 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 - Joseph Bernard Maala, 17, (Right)
 - John Angelo Bautista, 17, (Left)
   
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_1.jpg" width = "450"> <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_2.jpg" width = "450">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_1.jpg?" width = "450"> <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_2.jpg?" width = "450">
 
 ***
 
@@ -76,11 +76,17 @@ The robot uses a parallel steering geometry; a front SPIKE™ Large Motor steers
 
 ### 2.3. Robot Design
 
-The electrical components of the robot are mounted on a robot chassis made from LEGO® Technic. These materials were mostly from LEGO® Education SPIKE™ Prime Set and LEGO® Education SPIKE™ Prime Expansion Set, though a few were from LEGO® MINDSTORMS® Education EV3 Core Set and LEGO® MINDSTORMS® Education EV3 Expansion Set.
+The electrical components of the robot are mounted on a robot chassis made from LEGO® Technic. These materials were mostly from LEGO® Education SPIKE™ Prime Set and LEGO® Education SPIKE™ Prime Expansion Set, though a few lego parts came from LEGO® MINDSTORMS® Education EV3 Core Set and LEGO® MINDSTORMS® Education EV3 Expansion Set. Additionally, the robot is built to be small so that it can completely fit within the parking lot boundaries while being perpendicular to the wall.
 
-For the wheels of the robot, SPIKE™ Large Wheels are incorporated for the rear driving mechanism while EV3 Small Wheels are used for the steering mechanism of the robot. These wheels have a diameter of 88 mm and 43.2 mm respectively. The team decided to use large wheels for the robot's driving base since larger wheels have a higher circumference value compared to the small ones, thus covering longer distances per rotation and increasing the maximum speed limit of the robot. 
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/2.3.1.png?">
+
+For the wheels of the robot, SPIKE™ Large Wheels are incorporated for the rear driving mechanism while EV3 Small Wheels are used for the steering mechanism of the robot. These wheels have a diameter of 88 mm and 43.2 mm respectively. The team decided to use large wheels for the robot's driving base since larger wheels have a higher circumference value compared to the small ones, thus covering longer distances per rotation and increasing the maximum speed limit of the robot. As for steering, large wheels cannot be used since they will block the distance sensor. EV3 Small Wheels showcased the best performance as steering wheels of the robot compared to SPIKE™ Large Wheels, probably due to their smaller size and tire thickness.
+
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/2.3.2.png?">
 
 As for the weight distribution of the robot, the weight is focused on the rear side of the robot since this is where the driven wheels of the robot are. This is done through the placement of the robot's microcontrollers on the rear side of the robot. This weight distribution should enhance the traction of the said wheels, preventing them from slipping. 
+
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/2.3.3.png?">
 
 ***
 
@@ -308,4 +314,5 @@ The robot has come a long way since its development, yet there are still areas w
 1. Prepare these integrated development environments (IDEs) necessary for the compilation of the program.
    - [OpenMV IDE](https://openmv.io/pages/download)
    - [Pybricks](https://code.pybricks.com/)
+
 2. Now 
