@@ -45,7 +45,7 @@ Below are the specifications of the BSU Spartan Team's robot:
 - **Weight**: 1.2kg?
 - **Speed**: 6.5m/s
 - **Turning Radius**: 100mm?
-- **Working Voltage**: 8.3V-7.6V
+- **Working Voltage**: 8.3V–7.6V
 - **Maximum Steer**: ±60°
 - **Steering Torque**: 100Ncm
 - **Drive System**: Rear-wheel drive (RWD)
@@ -157,8 +157,6 @@ rBlobs = img.find_blobs([_RED], roi = [80, 0, 160, 240], pixels_threshold = 250)
 
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.1.1.png">
 
-<sup> Figure 5.1. shows the original image; Figure 5.2 shows the image with applied Green LAB threshold; 5.3 shows the image with applied Red LAB threshold. </sup>
-
 The necessary data from each colored traffic signs is saved, including the x and y coordinates of their centroid as well as their pixel number. These values are saved to determine the relative position of the traffic signs in respect to the position of the robot.
 
 ```py
@@ -210,22 +208,27 @@ else:
     return "Normal"
 ```
 
-### 5.3. Obstacle Strategy
+### 5.3. Traffic Sign Avoidance Strategy
 
 The whole program for the robot involves single-instance detection of the obstacles instead of the commonly used continuous detection for this category. This means that the robot is programmed to capture the data from the camera only at specific intervals. The team have selected this approach because it is easier for them to debug in the official competition.
 
 The main strategy for the robot involves programming it to follow three (3) possible routes which are determined based on the color of the traffic signs, the presence of the parking lot, and the defined driving direction of the challenge round. For example, the driving direction is set to Clockwise. If the detected color of the traffic sign is `Green`, the robot will glide itself to the outer wall, successfully passing the traffic sign to its left. If the detected color is `Red`, the robot will glide itself to the inner wall, successfully passing the traffic sign to its right. However, if the detected color is `Green` and there is a detected presence of the parking lot, the robot will go through somewhere between the outer and inner walls. You can refer to the illustration below for better visualization; the arrows represent the route the robot would take for each possibility.
 
-
-- Green arrow — `Green` traffic sign
-- Red arrow — `Red` traffic sign
-- Gray arrow — `Green` traffic sign with presence of parking lot
-
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.3.1.png">
 
-If the robot wasn't able to detect the color of the traffic sign, the robot would follow the route to the inner wall, which is the Red traffic sign route for the Clockwise driving direction and the Green traffic sign route for the Counterclockwise driving direction. If ever the color of the traffic signs in the same straightforward sections are different, which is very likely, the robot will follow the same logic stated earlier. Here is another illustration for better visualization:
+<sup> Green arrow – Green traffic sign; Red arrow – Red traffic sign; Gray arrow – Green traffic sign with presence of parking lot </sup>
+
+If the robot wasn't able to detect the color of the traffic sign, the robot would follow either the `Green` traffic sign or `Red` traffic sign route. If ever the color of the traffic signs in the same straightforward sections are different, which is very likely, the robot will follow the same logic stated earlier. Here is another illustration for better visualization:
 
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.3.2.png">
+
+Lastly, the robot is programmed to record the color and position of the traffic signs encountered of each straightforward section during its first lap. This approach ensures that there will be no false detections during its second and third lap.
+
+### 5.4. Parking Lot Strategy
+
+Similar to the traffic signs, the robot is set to record the position of the parking lot on the field during its first lap. Having a reference of the position of the parking lot, the robot is programed to follow a specific route: the robot will glide itself to the outer wall until it reaches the corner section before the straightforward section where the parking lot is positioned. The robot will then follow the route for the Green traffic sign with presence of parking lot, which is showcased in Figure 5.3 earlier. Afterwards, the robot will perform a perpendicular parking between the parking lot boundaries, marking the end of the run for the Obstacle Challenge Round. A following illustration is provided for a better visualization.
+
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.4.1.png">
 
 ***
 
@@ -256,7 +259,7 @@ The robot has come a long way since its development, yet there are still areas w
 
 - Switch to other microcontrollers such as Arduino Uno or Raspberry Pi. These microcontrollers can handle much more motors and sensors and control a wide variety of electrical components, in comparison to the team’s robot current SPIKE™ Large Hub which can only control a maximum of six (6) selected motors and sensors. An additional motor for driving should maximize the speed of the robot and more sensors should make the robot more reliable.
 - Swap to much more advanced sensors that can return accurate and precise values in a short given amount of time while still consuming a reasonable amount of power. The team wasn't able to maximize the functionality of the robot's distance sensor because of its inaccuracy, hindering the robot from  consistently reading the position of the parking lot boundaries.
-- Explore a better suited camera like Raspberry Pi Camera Module or NVIDIA Jetsonthat has a better processing power and memory capacity, making them more capable of memory-intensive algorithms. These cameras can handle complex machine learning models and offer a higher image quality.
+- Explore a better suited camera like Raspberry Pi Camera Module or NVIDIA Jetson that has a better processing power and memory capacity, making them more capable of memory-intensive algorithms. These cameras can handle complex machine learning models and offer a higher image quality.
 
 ### 7.3.   Obstacle Management
 
