@@ -185,7 +185,7 @@ rCx = rBlob.cx()
 rCy = rBlob.cy()
 ```
 
-Lastly, the necessary data from the camera must be transferred to the microcontroller in order to determine what does the robot need to do. This is done with the use of external libraries [`pupremote.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/pupremote.py) and [`pupremote_hub.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/pupremote_hub.py) made by AntonsMindstorms; the former is used to send the data from the camera while the latter is used to receive the data to the microcontroller.
+The necessary data from the camera must be transferred to the microcontroller in order to determine what does the robot need to do. This is done with the use of external libraries [`pupremote.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/pupremote.py) and [`pupremote_hub.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/pupremote_hub.py) made by AntonsMindstorms; the former is used to send the data from the camera while the latter is used to receive the data to the microcontroller.
 
 ```py
 # send data from OpenMV Cam H7 Plus to SPIKE™ Large Hub
@@ -210,6 +210,8 @@ camera.add_command('blob', 'hhhhhh')
 
 gtsCall = camera.call('blob')
 ```
+
+The main program for traffic sign detection is provided here: [`FE_ObstacleRecognition`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/FE_ObstacleRecognition.py). This program is uploaded to the OpenMV Cam H7 Plus. For the step by step guide how the program is compiled and uploaded to the camera, refer to [OpenMV Cam H7 Plus Program Guide](####openmv-cam-h7-program-guide)
 
 ### 5.2. Parking Lot Detection
 
@@ -313,8 +315,12 @@ The robot has come a long way since its development, yet there are still areas w
 
 ### 8.2. Program Construction Guide
 
-1. Prepare these integrated development environments (IDEs) necessary for the compilation of the program.
-   - [OpenMV IDE](https://openmv.io/pages/download)
-   - [Pybricks](https://code.pybricks.com/)
+#### OpenMV Cam H7 Plus Program Guide
 
-2. Now 
+1. Prepare [OpenMV IDE](https://openmv.io/pages/download) which is necessary for the compilation of the program to the robot's camera.
+
+2. For the program of the camera, prepare
+
+#### SPIKE™ Prime Program Guide
+
+1. Prepare [Pybricks](https://code.pybricks.com/) which is necessary for the compilation of the program to the robot's microcontroller.
