@@ -2,7 +2,7 @@
 ***
 
 # BSU Spartan Team
-[![Guidelines](https://img.shields.io/badge/Guidelines-2e52af)](https://wro-association.org/wp-content/uploads/WRO-2024-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
+[![Guidelines](https://img.shields.io/badge/FE-Guidelines-2e52af)](https://wro-association.org/wp-content/uploads/WRO-2024-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
 [![YouTube - OPEN CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OPEN_CHALLENGE-df3e3e?logo=youtube)](https://youtu.be/06rUdOECv34?si=MXno1v4bBEbKgmpB)
 [![YouTube - OBSTACLE CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OBSTACLE_CHALLENGE-df3e3e?logo=youtube)](https://youtu.be/ykb_tLmTXMM?si=5-LzPXuHlno7lfPP)
 
