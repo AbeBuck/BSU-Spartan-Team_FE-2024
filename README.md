@@ -185,7 +185,7 @@ rCx = rBlob.cx()
 rCy = rBlob.cy()
 ```
 
-The necessary data from the camera must be transferred to the microcontroller in order to determine what does the robot need to do. This is done with the use of external libraries [`pupremote.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/pupremote.py) and [`pupremote_hub.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/pupremote_hub.py) made by AntonsMindstorms; the former is used to send the data from the camera while the latter is used to receive the data to the microcontroller.
+The necessary data from the camera must be transferred to the microcontroller in order to determine what does the robot need to do. This is done with the use of external libraries [`pupremote.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/OpenMV%20Cam%20H7%20Plus%20Source%20Codes/pupremote.py) and [`pupremote_hub.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/SPIKE%E2%84%A2%20Prime%20Source%20Codes/pupremote_hub.py) made by AntonsMindstorms; the former is used to send the data from the camera while the latter is used to receive the data to the microcontroller.
 
 ```py
 # send data from OpenMV Cam H7 Plus to SPIKE™ Large Hub
