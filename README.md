@@ -325,7 +325,7 @@ The robot has come a long way since its development, yet there are still areas w
 
 4. Connect the camera to the computer with a use of an USB cable. The camera's LED should blink green multiple times and white once, indicating that the camera has been successfully detected by the computer. With the OpenMV IDE, click the `Connect` button on the bottom-left or press `Ctrl+E` to connect the camera to the application. The `Run Script` button below should turn green, indicating that the camera is successfully connected to the OpenMV IDE. 
 
-5. To run the program, click the `Run Script` button or press `Ctrl+R`.
+5. To run the program, click the `Run Script` button or press `Ctrl+R`. To stop the program, the same button and keys are used.
 
 6. To upload the program to the camera, proceed to the top-left of the OpenMV IDE. Click `Tools` then `Save open script to OpenMV Cam (as main.py)`.
 
@@ -337,7 +337,9 @@ The robot has come a long way since its development, yet there are still areas w
 
 3. To begin programming, you are first recommended to read the [Pybricks Documentation](https://code.pybricks.com/static/docs/v2.19.0/index.html) to understand how the robot can move and sense its surroundings. You may follow the instructions from Pybrick's official website here: [Creating Your First Program](https://pybricks.com/learn/getting-started/pybricks-environment/). The team have provided their programs which can be found here: [`SPIKE™ Prime Source Codes`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Source%20Code/SPIKE%E2%84%A2%20Prime%20Source%20Codes).
 
-4. To run the program to the microcontroller, you should first connect the microcontroller to the computer with Bluetooth. Click the `Bluetooth` icon on the top-right, choose which hub you plan to connect, then click `Pair`. You may 
+4. Connect the hub to the computer with Bluetooth. Click the `Bluetooth` icon on the top-right, choose which hub you plan to connect, then click `Pair`. 
+
+5. To run the program to the hub, click the `Run this program` button or press `F5`. To stop the program, click the `Stop everything` button or press `F6`.
 
 ### 8.3. Final Step
 
