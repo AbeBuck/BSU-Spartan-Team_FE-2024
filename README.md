@@ -17,7 +17,7 @@ Meet the members of the BSU Spartan Team, each bringing unique skills and dedica
 - Joseph Bernard A. Maala, 17, (Right)
 - John Angelo M. Bautista, 17, (Left)
   
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_1.jpg?" height = "300"> <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Funny_Photo_1.png?" height = "300">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_1.jpg?" width = "400"> <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Funny_Photo_1.jpg?" width = "400">
 
 ***
 
@@ -33,7 +33,7 @@ Meet the members of the BSU Spartan Team, each bringing unique skills and dedica
 * [`Video Performance`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Video%20Performance) contains 2 video links showcasing each challenge round.
 * [`Wiring Diagram`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Wiring%20Diagram) contains 2 pictorial wiring diagrams of the whole robot including all of its components.
 
-## Engineering Documentation Quick links
+## Engineering Documentation Quicklinks
 
 * [Introduction](#introduction)
 * [Robot Specifications](#robot-specifications)
@@ -48,9 +48,13 @@ Meet the members of the BSU Spartan Team, each bringing unique skills and dedica
 
 # Introduction
 
+This engineering documentation provides an overview of the BSU Spartan Team's self-driving car, designed for the WRO Turkiye 2024 International Finals. It covers Mobility Management, detailing motor selection, chassis design, and assembly based on principles of speed, torque, and power; Power and Sense Management, explaining the vehicle’s power sources and sensor configurations with a wiring diagram and BOM; and Obstacle Management, outlining strategies for navigating the course with flow diagrams and detailed code. Visual documentation includes images of the robot from all sides and team photos, while performance videos showcase the robot’s functionality across challenges.
+
 ***
 
 ## Robot Specifications
+
+The BSU Spartan Team presents this self-driving robot for the World Robot Olympiad Turkiye 2024 International Finals. Designed with precision, agility, and performance in mind, this robot embodies innovation and teamwork by our duo. Engineered to meet the demands of the competition, the Spartan robot features a compact design built with LEGO® and OpenMV Cam H7 Plus, offering optimal speed, maneuverability, and power efficiency. Below are the specifications that highlight the robot’s capabilities, reflecting our team's commitment to excellence and readiness to compete on the global stage.
 
 Below are the specifications of the BSU Spartan Team's robot:
 - **Dimensions**: 195mm (L) x 160mm (W) x 230mm (H)
