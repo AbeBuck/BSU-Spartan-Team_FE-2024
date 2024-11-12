@@ -310,9 +310,9 @@ The robot has come a long way since its development, yet there are still areas w
     - [LEGO® MINDSTORMS® Education EV3 Expansion Set](https://sasbadilearning.com/product/mindstorms-education-ev3-expansion-set/)
     - [OpenMV Cam H7 Plus](https://openmv.io/products/openmv-cam-h7-plus)
   
-2. Follow the Building Instructions
+2. Build the robot. You may refer to the [Building Instructions](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Vehicle%20Building%20Instructions) of the team's robot to have a starting idea.
 
-3. Finally, ensure that every electrical components are wired properly according to the [Pictorial Diagram](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Wiring%20Diagram/Robot%20Pictorial%20Diagram.png?) of the robot.
+3. Finally, ensure that every electrical components are wired properly according to the [Pictorial Diagram](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Wiring%20Diagram/Robot%20Pictorial%20Diagram.png?) of the team's robot.
 
 ### 8.2. Program Construction Guide
 
