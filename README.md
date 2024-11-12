@@ -323,7 +323,7 @@ The robot has come a long way since its development, yet there are still areas w
 
 2. You will need these external libraries made by AntonsMindstorms: [`pupremote.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/OpenMV%20Cam%20H7%20Plus%20Source%20Codes/pupremote.py) and [`lpf2.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/OpenMV%20Cam%20H7%20Plus%20Source%20Codes/lpf2.py). This library allows the robot's camera to transfer its data to the robot's microcontroller.
 
-3. For the main program of the camera, the team have provided their program which can be found here: [`FE_ObstacleRecognition`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/OpenMV%20Cam%20H7%20Plus%20Source%20Codes/FE_ObstacleRecognition.py). You are recommended to  read the [OpenMV Cam Documentation](https://docs.openmv.io/index.html) to understand how the functions and the whole codebase works.
+3. To begin programming, you are first recommended to read the [OpenMV Cam Documentation](https://docs.openmv.io/index.html) to understand how the functions and the whole codebase works. OpenMV IDE has a default starting program which you can freely edit. The team have provided their program which can be found here: [`FE_ObstacleRecognition.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/OpenMV%20Cam%20H7%20Plus%20Source%20Codes/FE_ObstacleRecognition.py). 
 
 4. To run the program to the camera, you should first connect the camera to the computer with a use of an USB cable. The camera's LED should blink green multiple times and white once, indicating that the camera has been successfully detected by the computer. With the OpenMV IDE, click the `Connect` button on the bottom-left or press `Ctrl+E` to connect the camera to the application. The `Run Script` button below should turn green, indicating that the camera is successfully connected to the OpenMV IDE. You may click the `Run Script` button or press `Ctrl+R` to run the program to the camera.
 
@@ -331,7 +331,13 @@ The robot has come a long way since its development, yet there are still areas w
 
 #### SPIKE™ Prime Program Guide
 
-1. Prepare [Pybricks](https://code.pybricks.com/) which is necessary for the compilation of the program to the robot's microcontroller.
+1. Prepare [Pybricks Code](https://code.pybricks.com/) which is necessary for the compilation of the program to the robot's microcontroller.
+
+2. You need to first install the Pybricks firmware on your SPIKE™ Large Hub. You may follow the instructions from Pybricks' official website here: [Installing Pybricks On The Hub](https://pybricks.com/learn/getting-started/install-pybricks/#installing-pybricks-on-the-hub)
+
+3. To begin programming, you are first recommended to read the [Pybricks Documentation](https://code.pybricks.com/static/docs/v2.19.0/index.html) to understand how the robot can move and sense its surroundings. You may follow the instructions from Pybrick's official website here: [Creating Your First Program](https://pybricks.com/learn/getting-started/pybricks-environment/). The team have provided their programs which can be found here: [`SPIKE™ Prime Source Codes`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Source%20Code/SPIKE%E2%84%A2%20Prime%20Source%20Codes).
+
+4. To run the program to the microcontroller, you should first connect the microcontroller to the computer with Bluetooth. Click the `Bluetooth` icon on the top-right, choose which hub you plan to connect, then click `Pair`. You may 
 
 ### 8.3. Final Step
 
