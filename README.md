@@ -6,7 +6,7 @@
 [![YouTube - OPEN CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OPEN_CHALLENGE-df3e3e?logo=youtube)](https://youtu.be/06rUdOECv34?si=MXno1v4bBEbKgmpB)
 [![YouTube - OBSTACLE CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OBSTACLE_CHALLENGE-df3e3e?logo=youtube)](https://youtu.be/ykb_tLmTXMM?si=5-LzPXuHlno7lfPP)
 
-This repository provides information pertaining to the robot of the BSU Spartan Team, a self-driving car designed and programmed by delegates from the Philippines, for Future Engineers Category. 
+This repository provides the BSU Spartan Team’s self-driving car, developed and programmed by our team from the Philippines for the Future Engineers Category. Here, you’ll find details about the robot’s design, functionality, and features, reflecting our dedication to pushing the boundaries of autonomous technology.
 
 ***
 
@@ -17,7 +17,7 @@ Meet the members of the BSU Spartan Team, each bringing unique skills and dedica
 - Joseph Bernard A. Maala, 17, (Right)
 - John Angelo M. Bautista, 17, (Left)
   
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Official_Photo_1.jpg?" width = "400"> <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Team%20Photos/Team-Funny_Photo_1.jpg?" width = "400">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/0.1.png?">
 
 ***
 
