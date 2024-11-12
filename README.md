@@ -3,8 +3,8 @@
 
 # BSU Spartan Team
 [![Guidelines](https://img.shields.io/badge/Guidelines-2e52af)](https://wro-association.org/wp-content/uploads/WRO-2024-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
-[![YouTube - OPEN CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OPEN_CHALLENGE-df3e3e?logo=youtube)]()
-[![YouTube - OBSTACLE CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OBSTACLE_CHALLENGE-df3e3e?logo=youtube)]()
+[![YouTube - OPEN CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OPEN_CHALLENGE-df3e3e?logo=youtube)](https://youtu.be/06rUdOECv34?si=MXno1v4bBEbKgmpB)
+[![YouTube - OBSTACLE CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OBSTACLE_CHALLENGE-df3e3e?logo=youtube)](https://youtu.be/ykb_tLmTXMM?si=5-LzPXuHlno7lfPP)
 
 This repository provides information pertaining to the robot of the BSU Spartan Team, a self-driving car designed and programmed by delegates from the Philippines, for Future Engineers Category. 
 
@@ -33,16 +33,16 @@ Meet the members of the BSU Spartan Team, each bringing unique skills and dedica
 * [`Video Performance`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Video%20Performance) contains 2 video links showcasing each challenge round.
 * [`Wiring Diagram`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Wiring%20Diagram) contains 2 pictorial wiring diagrams of the whole robot including all of its components.
 
-## 
+## Engineering Documentation Quicklinks
 
-[Introduction](#introduction)
-[Robot Specifications](#robot-specifications)
-1. [Mobility Management](#1-mobility-management)
-2. [Power And Sense Management](#2-sense-management)
-3. [Obstacle Management](#3-obstacle-management)
-4. [Engineering Factor](#4-engineering-factor)
-5. [Recommendations](#5-recommendations)
-6. [Construction Guide](#6-construction-guide)
+* [Introduction](#introduction)
+* [Robot Specifications](#robot-specifications)
+* [1. Mobility Management](#1-mobility-management)
+* [2. Power And Sense Management](#2-power-and-sense-management)
+* [3. Obstacle Management](#3-obstacle-management)
+* [4. Engineering Factor](#4-engineering-factor)
+* [5. Recommendations](#5-recommendations)
+* [6. Construction Guide](#6-construction-guide)
 
 ***
 
@@ -163,11 +163,11 @@ Both the SPIKE™ Distance Sensor and OpenMV Cam H7 Plus are mounted to a SPIKE�
 
 ***
 
-## 4. Obstacle Management
+## 3. Obstacle Management
 
 In order to detect the position and negotiate with the color of the obstacles, a specific strategy must be well-planned to possibly finish three (3) laps in Obstacle Challenge Rounds. The team had spent a fair amount of time considering different thoughts and ideas to efficiently manage the obstacles on the game field; always giving space for new yet excellent ideas to be added in the team's strategy.
 
-### 4.1. Traffic Sign Detection
+### 3.1. Traffic Sign Detection
 The camera is programmed to use LAB thresholds to identify the color of the traffic signs, which should be either green or red. A proper given threshold can be obtained with different ways, but trial and error should be enough and being familiarized with the LAB color space could help. Here are the LAB thresholds of the team for the obstacles:
 
 ```py
@@ -226,7 +226,7 @@ gtsCall = camera.call('blob')
 
 The main program for traffic sign detection is provided here: [`FE_ObstacleRecognition`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/FE_ObstacleRecognition.py). This program is uploaded to the OpenMV Cam H7 Plus. For the step by step guide how the program is compiled and uploaded to the camera, refer to [OpenMV Cam H7 Plus Program Guide](####openmv-cam-h7-program-guide)
 
-### 4.2. Parking Lot Detection
+### 3.2. Parking Lot Detection
 
 In order to determine if there is a presence of parking lot in each straightforward section, the distance sensor of the robot is used instead of the camera. The team have selected this approach since it doesn't require them to find the proper LAB threshold for the color of the parking lot. The `distance()` function of the `pupdevices` module is used to determine if there is a presence of the parking lot.
 
@@ -239,7 +239,7 @@ else:
     return "Normal"
 ```
 
-### 4.3. Traffic Sign Avoidance Strategy
+### 3.3. Traffic Sign Avoidance Strategy
 
 The whole program for the robot involves single-instance detection of the obstacles instead of the commonly used continuous detection for this category. This means that the robot is programmed to capture the data from the camera only at specific intervals. The team have selected this approach because it is easier for them to debug in the official competition.
 
@@ -257,13 +257,13 @@ If the robot wasn't able to detect the color of the traffic sign, the robot woul
 
 Lastly, the robot is programmed to record the color and position of the traffic signs encountered of each straightforward section during its first lap. This approach ensures that there will be no false detections during its second and third lap.
 
-### 4.4. Parking Lot Strategy
+### 3.4. Parking Lot Strategy
 
 Similar to the traffic signs, the robot is set to record the position of the parking lot on the field during its first lap. Having a reference of the position of the parking lot, the robot is programed to follow a specific route: the robot will glide itself to the outer wall until it reaches the corner section before the straightforward section where the parking lot is positioned. The robot will then follow the route for the Green traffic sign with presence of parking lot, which is showcased in Figure 5.3 earlier. Afterwards, the robot will perform a perpendicular parking between the parking lot boundaries, marking the end of the run for the Obstacle Challenge Round. A following illustration is provided for a better visualization.
 
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.4.1.png?">
 
-### 4.5. Third Lap Continuation
+### 3.5. Third Lap Continuation
 
 The robot must continue to the third lap in the in the opposite direction if the last traffic sign detected is Red. In order to determine if the robot must perform the said action, the robot uses the recorded color and position of traffic signs it detected during the first lap. If ever the last detected traffic sign is Red, the robot would make its turn in the next corner section of the starting straightforward section of the robot. Here is an illustration demonstrating the route the robot will take for the third lap continuation:
 
@@ -273,7 +273,7 @@ The robot must continue to the third lap in the in the opposite direction if the
 
 ***
 
-## 5. Engineering Factor
+## 4. Engineering Factor
 
 The whole physical structure of the robot was completely designed and manufactured by the team out of LEGO® Technic. While there are standard off-the-shelf electrical components such as motors and sensors for the robot's functionality, the robot's design remains unique, embodying innovative features that set it apart from typical robots. 
 
@@ -289,32 +289,32 @@ The OpenMV Cam H7 Plus is securely placed inside the custom-designed LEGO camera
 
 ***
 
-## 6. Recommendations
+## 5. Recommendations
 
 The robot has come a long way since its development, yet there are still areas where it can be refined and optimized. The team first assessed the limitations of the robot to identify possible recommendations that should address these current limitations and anticipate future challenges. These recommendations aim to enhance the overall performance, reliability, and functionality of the robot.
 
-### 6.1. Mobility Management Recommendations
+### 5.1. Mobility Management Recommendations
 
 - Incorporate a [differential gear](https://en.wikipedia.org/wiki/Differential_(mechanical_device)) into the robot's driving mechanism for smooth and stable turns by letting the wheels rotate at different speeds. This is important since for instance, during a right turn, the left wheel, being farther from the center of the turn, must cover a larger distance along the circular path than the right wheel within the same duration.
 - Select or develop custom wheels with appropriate dimensions and proper tires for better traction on the game field. This would lessen tire slip, improving the precision of the motor encoders thus enhancing the consistency of the robot.
 - Try other types of steering geometry, particularly the [Ackerman steering mechanism](https://en.wikipedia.org/wiki/Ackermann_steering_geometry) which allows a car to turn while avoiding tire slip. Though it is not that easy to implement, it should allow smoother and sharper turns if incorporated correctly, allowing the robot for a wider range of movements.
 - Test the capability of [all-wheel drive (AWD) transmission](https://en.wikipedia.org/wiki/All-wheel_drive_vehicle) which may improve the speed, acceleration, and stability of the robot. This is due to the fact that it distributes power across all four wheels, reducing the chance of wheels losing traction at high acceleration. However, it should be taken into consideration that AWD systems typically consume more weight than RWD, which can reduce the maximum speed of the robot. 
 
-### 6.2. Power and Sense Management Rcommendations
+### 5.2. Power and Sense Management Rcommendations
 
 - Switch to other microcontrollers such as [Arduino Uno](https://docs.arduino.cc/hardware/uno-rev3/) or [Raspberry Pi](https://www.raspberrypi.com/). These microcontrollers are able to handle more motors and sensors, and control a wide variety of electrical components, in comparison to the team's current SPIKE™ Large Hub, it can only control a maximum of six (6) selected motors and sensors. Therefore it is better if there is an additional port that can attach an additional motor for driving to maximize the speed of the robot and more sensors can be attached to make the robot more reliable.
 - Explore a better suited camera like [Raspberry Pi Camera Module 2](https://www.raspberrypi.com/products/camera-module-v2/) or [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) that has a better processing power and memory capacity, making them more capable of memory-intensive algorithms. These cameras can handle complex machine learning models and offer a higher image quality.
 - Swap to much more advanced sensors that can return accurate and precise values in a short given amount of time while still consuming a reasonable amount of power. The team wasn't able to maximize the functionality of the robot's distance sensor because of its inaccuracy, hindering the robot from  consistently reading the position of the parking lot boundaries.
 
-### 6.3. Obstacle Management Recommendations
+### 5.3. Obstacle Management Recommendations
 
 - Consider an obstacle management with continuous detection of the obstacle rather than a single-instance detection which causes a lot of movements. In addition to that, try to apply various detection methods beyond simple pixel-based such as object tracking, which is the recognition and tracking of items along through an image processing application. This offers the advantage of consistently following a target unlike simple pixel-based methods.
 
 ***
 
-## 7. Construction Guide
+## 6. Construction Guide
 
-### 7.1. Robot Construction Guide
+### 6.1. Robot Construction Guide
 
 1. Prepare these necessary kits and equipments; you may refer to the [Bills of Materials](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Bills%20of%20Materials/README.md):
     - [LEGO® Education SPIKE™ Prime Set](https://education.lego.com/en-us/products/lego-education-spike-prime-set/45678/)
@@ -327,7 +327,7 @@ The robot has come a long way since its development, yet there are still areas w
 
 3. Finally, ensure that every electrical components are wired properly according to the [Pictorial Diagram](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Wiring%20Diagram/Robot%20Pictorial%20Diagram.png?) of the team's robot.
 
-### 7.2. Program Construction Guide
+### 6.2. Program Construction Guide
 
 #### OpenMV Cam H7 Plus Program Guide
 
@@ -355,7 +355,7 @@ The robot has come a long way since its development, yet there are still areas w
 
 5. To run the program to the hub, click the `Run this program` button or press `F5`. To stop the program, click the `Stop everything` button or press `F6`.
 
-### 7.3. Final Step
+### 6.3. Final Step
 
-The team strongly encourages everyone to enhance their program and robot build as true engineering involves not only creating solutions but also sharing ideas with others to drive innovation forward. You may refer to the team's [Recommendations](#6-recommendations) for the team's insights on how you can improve their work. By building upon each other's work, we can collectively advance the project to new levels, allowing it to evolve and reach its full potential through teamwork.
+The team strongly encourages everyone to enhance their program and robot build as true engineering involves not only creating solutions but also sharing ideas with others to drive innovation forward. You may refer to the team's [Recommendations](#5-recommendations) for the team's insights on how you can improve their work. By building upon each other's work, we can collectively advance the project to new levels, allowing it to evolve and reach its full potential through teamwork.
 
