@@ -184,7 +184,7 @@ rBlobs = img.find_blobs([_RED], roi = [80, 0, 160, 240], pixels_threshold = 250)
 # roi = region of interest; pixels_threshold = minimum pixel count
 ```
 
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.1.1.png?">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/3.1.1.png?">
 
 The necessary data from each colored traffic signs is saved, including the x and y coordinates of their centroid as well as their pixel number. These values are saved to determine the relative position of the traffic signs in respect to the position of the robot.
 
@@ -245,7 +245,7 @@ The whole program for the robot involves single-instance detection of the obstac
 
 The main strategy for the robot involves programming it to follow three (3) possible routes which are determined based on the color of the traffic signs, the presence of the parking lot, and the defined driving direction of the challenge round. For example, the driving direction is set to Clockwise. If the detected color of the traffic sign is `Green`, the robot will glide itself to the outer wall, successfully passing the traffic sign to its left. If the detected color is `Red`, the robot will glide itself to the inner wall, successfully passing the traffic sign to its right. However, if the detected color is `Green` and there is a detected presence of the parking lot, the robot will go through somewhere between the outer and inner walls. You can refer to the illustration below for better visualization; the arrows represent the route the robot would take for each possibility.
 
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.3.1.png?">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/3.3.1.png?">
 
 * Green arrow – Green traffic sign
 * Red arrow – Red traffic sign
@@ -253,7 +253,7 @@ The main strategy for the robot involves programming it to follow three (3) poss
 
 If the robot wasn't able to detect the color of the traffic sign, the robot would follow either the `Green` traffic sign or `Red` traffic sign route. If ever the color of the traffic signs in the same straightforward sections are different, which is very likely, the robot will follow the same logic stated earlier. Here is another illustration for better visualization:
 
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.3.2.png?">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/3.3.2.png?">
 
 Lastly, the robot is programmed to record the color and position of the traffic signs encountered of each straightforward section during its first lap. This approach ensures that there will be no false detections during its second and third lap.
 
@@ -261,13 +261,13 @@ Lastly, the robot is programmed to record the color and position of the traffic 
 
 Similar to the traffic signs, the robot is set to record the position of the parking lot on the field during its first lap. Having a reference of the position of the parking lot, the robot is programed to follow a specific route: the robot will glide itself to the outer wall until it reaches the corner section before the straightforward section where the parking lot is positioned. The robot will then follow the route for the Green traffic sign with presence of parking lot, which is showcased in Figure 5.3 earlier. Afterwards, the robot will perform a perpendicular parking between the parking lot boundaries, marking the end of the run for the Obstacle Challenge Round. A following illustration is provided for a better visualization.
 
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.4.1.png?">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/3.4.1.png?">
 
 ### 3.5. Third Lap Continuation
 
 The robot must continue to the third lap in the in the opposite direction if the last traffic sign detected is Red. In order to determine if the robot must perform the said action, the robot uses the recorded color and position of traffic signs it detected during the first lap. If ever the last detected traffic sign is Red, the robot would make its turn in the next corner section of the starting straightforward section of the robot. Here is an illustration demonstrating the route the robot will take for the third lap continuation:
 
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/5.5.1.png?">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/3.5.1.png?">
 
 * The position of the yellow car is where the robot starts.
 
@@ -279,11 +279,11 @@ The whole physical structure of the robot was completely designed and manufactur
 
 In order to maximize the functionality of the camera and distance sensor, the robot is equipped with a SPIKE™ Large Motor that allows these sensors to rotate for approximately 135° in both directions starting from the middle. This rotating capability enables the sensors to capture a wider view of the robot's surroundings, enhancing the robot's ability to detect and navigate through obstacles and the whole game field. 
 
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/6.0.1.png?">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/4.0.1.png?">
 
 The robot is equipped with free wheels on its sides, allowing for uninterrupted movements when it is about to encounter a wall at an angle. Normally, the robot will be stuck or interrupted when a wall is approached diagonally. However, these free wheels enable the robot to glide smoothly along the surface of the wall, perfectly aligning itself to the wall. This design minimizes the possible disruptions in movement and enables the robot to adjust its position precisely. 
 
-<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/6.0.2.png?">
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/4.0.2.png?">
 
 The OpenMV Cam H7 Plus is securely placed inside the custom-designed LEGO camera mount which was uniquely designed by the team. The mount structures integrate LEGO components, making it easy to attach the camera onto the rotating large motors. This LEGO design maintains its uniformity with the overall robot and allows for convenient attachment of additional external components, such as a color sensor placed behind the camera.
 
