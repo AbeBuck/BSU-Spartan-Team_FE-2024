@@ -60,6 +60,7 @@ Below are the specifications of the BSU Spartan Team's robot:
 ## 2. Mobility Management
 
 ### 2.1. Motor Selection
+
 Motor selection is a crucial part of building the robot since its maneuverability highly depends on it. LEGO® Education SPIKE™ Prime Set has two (2) available motors: SPIKE™ Medium Angular Motor and SPIKE™ Large Angular Motor, which will be referenced as SPIKE™ Medium Motor and SPIKE™ Large Motor respectively. These motors have a lot in common performance-wise and only differ in speed and torque. Based on tests performed with a provision of 7.2V power supply, here are the results: 
 <br/>
 
@@ -73,7 +74,7 @@ The SPIKE™ Medium Motor was shown to be negligibly faster than the SPIKE™ La
 
 ### 2.2. Robot Driving Mechanism
 
-The robot uses a parallel steering geometry; a front SPIKE™ Large Motor steers the front wheels of the robot parallel to each other. Meanwhile, the robot is propelled by a rear-wheel drive (RWD) transmission , where power from the rear SPIKE™ Large Motor drives the rear wheels, propelling the robot forward or backward. This steering geometry and transmission setup was chosen by the team because it is commonly used in the Future Engineers Category. Additionally, the team experimented and concluded that the RWD system offer better handling of the robot compared to the front-wheel drive (FWD).
+The robot uses a parallel steering geometry; a front SPIKE™ Large Motor steers the front wheels of the robot parallel to each other. Meanwhile, the robot is propelled by a rear-wheel drive (RWD) transmission , where power from the rear SPIKE™ Large Motor drives the rear wheels, propelling the robot forward or backward. This steering geometry and transmission setup was chosen by the team because it is commonly used in the Future Engineers Category. Additionally, the team experimented and concluded that the RWD system offered better handling of the robot compared to the front-wheel drive (FWD).
 
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/2.2.1.png?">
 
@@ -100,23 +101,27 @@ Self-driving cars are highly dependent on their sensors in order to drive autono
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/3.0.1.png?">
 
 ### 3.1.   SPIKE™ Color Sensor 
+
 The SPIKE™ Color Sensor has the capacity to measure color RGB/HSV, reflection intensity, and ambient intensity. It has a sample rate of 100 Hz and an optimal reading distance of 16 mm. It has three (3) LEDs that can be turned on and off individually at different power levels, making it a possible light output. The team selected this color sensor due to its excellent performance in color detection, far better than the other color sensors the team have.
 
-This color sensor is positioned on the front of the robot where it is facing downwards the game field. It is primarily used to read the colored lines on the game field, thus determining the driving direction of the robot. If it has detected the orange line first, the robot would know that the driving direction is clockwise, else if the first detected line was blue, the driving direction is counterclockwise. Additionally, the robot is able to know its position on some parts of the field that have a clear line to be read by the color sensor.
+This color sensor is positioned on the front of the robot where it is facing downwards the game field. It is primarily used to read the colored lines on the game field, thus determining the driving direction of the robot. If it has detected the orange line first, the robot would know that the driving direction is clockwise, else if the first detected line was blue, the driving direction is counterclockwise. Additionally, the robot is able to know its position on some parts of the game field that have a clear line to be read by the color sensor.
 
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/3.1.1.png?">
 
 ### 3.2.   SPIKE™ Distance Sensor
+
 The SPIKE™ Distance Sensor has the ability to measure the distance to a surface in front of it with the use of ultrasonic technology. It has a sample rate of 100 Hz and a distance sensing range of 5 cm to 200 cm +/- 2 cm. It has an entrance angle of +/- 35° and has four (4) LEDs that can be turned on and off individually at different power levels, making it a possible light output. It sends inaudible high frequency sound waves from one “eye” while the other “eye” will measure how long it takes the sound waves to reflect through it.
 
-This distance sensor is placed on the front of the robot, which is used to determine the position of the robot in respect to the wall in front of the sensor. This allows the robot to navigate safely within the game field, continuously checking if the robot is near the outer boundary wall in Open Challenge Rounds since the robot may not touch the said wall. In addition to that, it is also used to identify the position of the randomly placed parking boundaries and check if there is an obstacle in front of the robot in Obstacle Challenge Rounds.
+This distance sensor is placed on the front of the robot, which is used to determine the position of the robot in respect to the wall in front of the sensor. This allows the robot to navigate safely within the game field, continuously checking if the robot is near the outer boundary wall in Open Challenge Rounds since the robot may not touch the said wall. In addition to that, it is also used to identify the position of the parking lot in Obstacle Challenge Rounds.
+
 
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/3.2.1.png?">
 
 ### 3.3.   SPIKE™ Gyro Sensor
-The built-in SPIKE™ Gyro Sensor can keep track of the angle the hub is currently facing. It consists of a three-axis accelerometer and three-axis gyroscope. The gyroscope part records the change of rotation of the hub and measures the total angle of rotation in degrees, enabling it to return the hub’s exact rotation angle around a given axis. Combined with the accelerometer, it allows the hub to determine its orientation and acceleration along a given axis. 
 
-The robot relies on this gyro sensor for most of its movements, facilitating its accurate navigation across the whole game field. It enables the robot to follow a specific angle when moving, thus making it drive straight and turn into a particular angle efficiently. 
+The built-in SPIKE™ Gyro Sensor can keep track of the angle the hub is currently facing. It consists of a three-axis accelerometer and three-axis gyroscope. The gyroscope part records the change of rotation of the hub and measures the total angle of rotation in degrees, enabling it to return the hub's exact rotation angle around a given axis. Combined with the accelerometer, it allows the hub to determine its orientation and acceleration along a given axis. 
+
+The robot relies on this gyro sensor for most of its movements, facilitating its accurate navigation across the whole game field. It enables the robot to follow a specific angle when moving, thus making it drive straight and turn into a particular angle efficiently.
 
 ### 3.4.   OpenMV Cam H7 Plus
 
@@ -129,23 +134,24 @@ The team selected the OpenMV Cam H7 Plus to specifically detect traffic signs an
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/3.4.1.png?">
 
 ### 3.5.   Additional Information
+
 Both the SPIKE™ Distance Sensor and OpenMV Cam H7 Plus are mounted to a SPIKE™ Large Motor. This enables these two sensors to rotate approximately 135° in both directions starting from the middle, covering a wide part of the surrounding area of the robot. The team has done this since the limited ports of the SPIKE™ Large Hub cannot provide more room for sensors around the robot. This motor serves as a helpful tool in the detection of the walls, obstacles, and overall surroundings of the robot while it is in the game field.
 
 ***
 
 ## 4. Power Management
 
-In the field of robotics, power management serves as the cornerstone that ensures the operation of an autonomous system. It serves as the brain and heart of the robot. Not only does it play a role in supplying data and energy to the various components, but it also plays a role in optimizing the overall performance of the robot.
-
-The setup for our self-driving robot centers around the SPIKE™ Large Hub microcontroller, along with its accompanying battery. Below are the figures and details about the components in the power management section:
+In the field of robotics, power management serves as the cornerstone that ensures the operation of an autonomous system. It serves as the brain and heart of the robot. Not only does it play a role in supplying data and energy to the various components, but it also plays a role in optimizing the overall performance of the robot. Below are the figures and details about the components of the robot in the power management section:
 
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/4.0.1.png?">
 
 ### 4.1.   SPIKE™ Large Hub
-The SPIKE™ Large Hub serves as the primary controller of the robot, controlling most of the components of the robot including its motors and sensors. It is where the robot’s main program is downloaded; integrated with MicroPython as the operating system. The hub features six LPF2 input/output ports and a built-in six-axis gyro sensor, which includes a three-axis accelerometer and three-axis gyroscope. Additionally, it has a built-in speaker with a maximum sound quality of 12-bit 16 KHz and can connect to devices via Bluetooth or USB Cable. The team selected this hub as the primary controller for the robot due to its comprehensive capabilities, having six (6) ports for SPIKE™ excellent motors and sensors.
+
+The SPIKE™ Large Hub serves as the primary controller of the robot, controlling most of the components of the robot including its motors and sensors. It is where the robot's main program is downloaded; integrated with MicroPython as the operating system. The hub features six LPF2 input/output ports and a built-in six-axis gyro sensor, which includes a three-axis accelerometer and three-axis gyroscope. Additionally, it has a built-in speaker with a maximum sound quality of 12-bit 16 KHz and can connect to devices via Bluetooth or USB Cable. The team selected this hub as the primary controller for the robot due to its comprehensive capabilities and easy-to-use interface.
 
 ### 4.2.   SPIKE™ Large Hub Rechargeable Battery
-The SPIKE™ Large Hub Rechargeable Battery is a lithium-ion polymer battery designed to power the Technic Large Hub, which in turn powers all Spike motors and sensors. It can be charged inside the Hub using a micro-USB cable and can be removed easily. With a capacity of 2100 mAh and an output of 7.3V, this battery has a lifetime of over 500 cycles, meaning it can handle more than 500 charge-discharge cycles throughout its lifespan.
+
+The SPIKE™ Large Hub Rechargeable Battery is a lithium-ion polymer battery designed to power the SPIKE™ Large Hub, which in turn powers all SPIKE™ motors and sensors. It can be charged inside the Hub using a micro-USB cable and can be removed easily. With a capacity of 2100 mAh and an output of 7.3V, this battery has a lifetime of over 500 cycles, meaning it can handle more than 500 charge-discharge cycles throughout its lifespan.
 
 ***
 
@@ -281,14 +287,14 @@ The robot has come a long way since its development, yet there are still areas w
 
 ### 7.1. Mobility Management
 
-- Incorporate a [differential gear](https://en.wikipedia.org/wiki/Differential_(mechanical_device)) into the robot's driving mechanism for smooth and stable turns by letting the wheels rotate at different speeds. This is important since for instance, during a right turn, the left wheel, being farther from the center of the turn, must cover a larger distance along the circular path than the right wheel within the same duration. 
-- Try other types of steering geometry, particularly the [Ackerman steering mechanism](https://en.wikipedia.org/wiki/Ackermann_steering_geometry) which allows a car to turn while avoiding tire slip. Though it is not that easy to implement, it should allow smoother and sharper turns if incorporated correctly, allowing the robot for a wider range of movements.
-- Test the capability of [all-wheel drive (AWD) transmission](https://en.wikipedia.org/wiki/All-wheel_drive_vehicle) which may improve the speed, acceleration, and stability of the robot. This is due to the fact that it distributes power across all four wheels, reducing the chance of wheels losing traction at high acceleration. However, it should be taken into consideration that AWD systems typically consumes more weight than RWD, which can reduce the maximum speed of the robot. 
+- Incorporate a [differential gear](https://en.wikipedia.org/wiki/Differential_(mechanical_device)) into the robot's driving mechanism for smooth and stable turns by letting the wheels rotate at different speeds. This is important since for instance, during a right turn, the left wheel, being farther from the center of the turn, must cover a larger distance along the circular path than the right wheel within the same duration.
 - Select or develop custom wheels with appropriate dimensions and proper tires for better traction on the game field. This would lessen tire slip, improving the precision of the motor encoders thus enhancing the consistency of the robot.
+- Try other types of steering geometry, particularly the [Ackerman steering mechanism](https://en.wikipedia.org/wiki/Ackermann_steering_geometry) which allows a car to turn while avoiding tire slip. Though it is not that easy to implement, it should allow smoother and sharper turns if incorporated correctly, allowing the robot for a wider range of movements.
+- Test the capability of [all-wheel drive (AWD) transmission](https://en.wikipedia.org/wiki/All-wheel_drive_vehicle) which may improve the speed, acceleration, and stability of the robot. This is due to the fact that it distributes power across all four wheels, reducing the chance of wheels losing traction at high acceleration. However, it should be taken into consideration that AWD systems typically consume more weight than RWD, which can reduce the maximum speed of the robot. 
 
 ### 7.2. Power and Sense Management
 
-- Switch to other microcontrollers such as [Arduino Uno](https://docs.arduino.cc/hardware/uno-rev3/) or [Raspberry Pi](https://www.raspberrypi.com/). These microcontrollers can handle much more motors and sensors and control a wide variety of electrical components, in comparison to the team’s robot current SPIKE™ Large Hub which can only control a maximum of six (6) selected motors and sensors. An additional motor for driving should maximize the speed of the robot and more sensors should make the robot more reliable.
+- Switch to other microcontrollers such as [Arduino Uno](https://docs.arduino.cc/hardware/uno-rev3/) or [Raspberry Pi](https://www.raspberrypi.com/). These microcontrollers are able to handle more motors and sensors, and control a wide variety of electrical components, in comparison to the team's current SPIKE™ Large Hub, it can only control a maximum of six (6) selected motors and sensors. Therefore it is better if there is an additional port that can attach an additional motor for driving to maximize the speed of the robot and more sensors can be attached to make the robot more reliable.
 - Explore a better suited camera like [Raspberry Pi Camera Module 2](https://www.raspberrypi.com/products/camera-module-v2/) or [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) that has a better processing power and memory capacity, making them more capable of memory-intensive algorithms. These cameras can handle complex machine learning models and offer a higher image quality.
 - Swap to much more advanced sensors that can return accurate and precise values in a short given amount of time while still consuming a reasonable amount of power. The team wasn't able to maximize the functionality of the robot's distance sensor because of its inaccuracy, hindering the robot from  consistently reading the position of the parking lot boundaries.
 
