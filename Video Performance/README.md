@@ -1,4 +1,4 @@
 
-* Open Challenge: https://youtu.be/ApVaZ5E51ps
+* Open Challenge: [BSU Spartan Team - OPEN CHALLENGE (WRO 2024)](https://youtu.be/06rUdOECv34?si=MXno1v4bBEbKgmpB)
 
-* Obstacle Challenge: https://youtu.be/CBKLfdkrdSg
+* Obstacle Challenge: [BSU Spartan Team - OBSTACLE CHALLENGE (WRO 2024)](https://youtu.be/ykb_tLmTXMM?si=5-LzPXuHlno7lfPP)
