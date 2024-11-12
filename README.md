@@ -2,9 +2,9 @@
 ***
 
 # BSU Spartan Team
-[![WRO - Future Engineers](https://img.shields.io/badge/WRO-Future_Engineers-2e52af)](https://wro-association.org/wp-content/uploads/WRO-2024-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
-[![YouTube - Opening Race](https://img.shields.io/badge/YouTube-▶️%20Opening_Race-df3e3e?logo=youtube)](https://www.youtube.com/watch?v=waIHJP2l4eQ)
-[![YouTube - Obstacle Race](https://img.shields.io/badge/YouTube-▶️%20Obstacle_Race-df3e3e?logo=youtube)](https://www.youtube.com/watch?v=hp4pJUoMnfw)
+[![Guidelines](https://img.shields.io/badge/Guidelines-2e52af)](https://wro-association.org/wp-content/uploads/WRO-2024-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
+[![YouTube - OPEN CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OPEN_CHALLENGE-df3e3e?logo=youtube)]()
+[![YouTube - OBSTACLE CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OBSTACLE_CHALLENGE-df3e3e?logo=youtube)]()
 
 This repository provides information pertaining to the robot of the BSU Spartan Team, a self-driving car designed and programmed by delegates from the Philippines, for Future Engineers Category. 
 
