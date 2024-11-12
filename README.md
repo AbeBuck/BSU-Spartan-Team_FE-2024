@@ -319,8 +319,19 @@ The robot has come a long way since its development, yet there are still areas w
 
 1. Prepare [OpenMV IDE](https://openmv.io/pages/download) which is necessary for the compilation of the program to the robot's camera.
 
-2. For the program of the camera, prepare
+2. You will need these external libraries made by AntonsMindstorms: [`pupremote.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/OpenMV%20Cam%20H7%20Plus%20Source%20Codes/pupremote.py) and [`lpf2.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/OpenMV%20Cam%20H7%20Plus%20Source%20Codes/lpf2.py). This library allows the robot's camera to transfer its data to the robot's microcontroller.
+
+3. For the main program of the camera, the team have provided their program which can be found here: [`FE_ObstacleRecognition`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/OpenMV%20Cam%20H7%20Plus%20Source%20Codes/FE_ObstacleRecognition.py). You are recommended to  read the [OpenMV Cam Documentation](https://docs.openmv.io/index.html) to understand how the functions and the whole codebase works.
+
+4. To run the program to the camera, you should first connect the camera to the computer with a use of an USB cable. The camera's LED should blink green multiple times and white once, indicating that the camera has been successfully detected by the computer. With the OpenMV IDE, click the `Connect` button on the bottom-left or press `Ctrl+E` to connect the camera to the application. The `Run Script` button below should turn green, indicating that the camera is successfully connected to the OpenMV IDE. You may click the `Run Script` button or press `Ctrl+R` to run the program to the camera.
+
+5. To upload the program to the camera, proceed to the top-left of the OpenMV IDE. Click `Tools` then `Save open script to OpenMV Cam (as main.py)`.
 
 #### SPIKE™ Prime Program Guide
 
 1. Prepare [Pybricks](https://code.pybricks.com/) which is necessary for the compilation of the program to the robot's microcontroller.
+
+#### Final Step
+
+The team strongly encourages you to enhance their program, as true engineering involves not only creating solutions but also sharing ideas with others to drive innovation forward. By building upon each other's work, we can collectively advance the project to new levels.
+
