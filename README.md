@@ -56,11 +56,6 @@ This engineering documentation provides an overview of the BSU Spartan Team's se
 
 The BSU Spartan Team presents this self-driving robot for the World Robot Olympiad Turkiye 2024 International Finals. Designed with precision, agility, and performance in mind, this robot embodies innovation and teamwork by our duo. Engineered to meet the demands of the competition, the Spartan robot features a compact design built with LEGO® and OpenMV Cam H7 Plus, offering optimal speed, maneuverability, and power efficiency. Below are the specifications that highlight the robot’s capabilities, reflecting our team's commitment to excellence and readiness to compete on the global stage.
 
-<img src="https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/0.3.png?" align="right" width="580">
-
-<br>
-</br>
-
 - **Dimensions**: 195mm (L) x 160mm (W) x 230mm (H)
 - **Weight**: 1.23kg
 - **Maximum Speed**: 6.53m/s
@@ -71,8 +66,7 @@ The BSU Spartan Team presents this self-driving robot for the World Robot Olympi
 - **Steering Geometry**: Parallel steering
 - **Material**: LEGO® Technic
 
-<br>
-</br>
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/0.2.png?">
 
 ***
 
