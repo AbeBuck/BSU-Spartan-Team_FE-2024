@@ -311,6 +311,7 @@ The robot has come a long way since its development, yet there are still areas w
     - [OpenMV Cam H7 Plus](https://openmv.io/products/openmv-cam-h7-plus)
   
 2. Follow the Building Instructions
+
 3. Finally, ensure that every electrical components are wired properly according to the [Pictorial Diagram](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Wiring%20Diagram/Robot%20Pictorial%20Diagram.png?) of the robot.
 
 ### 8.2. Program Construction Guide
@@ -331,7 +332,7 @@ The robot has come a long way since its development, yet there are still areas w
 
 1. Prepare [Pybricks](https://code.pybricks.com/) which is necessary for the compilation of the program to the robot's microcontroller.
 
-#### Final Step
+### 8.3. Final Step
 
-The team strongly encourages you to enhance their program, as true engineering involves not only creating solutions but also sharing ideas with others to drive innovation forward. By building upon each other's work, we can collectively advance the project to new levels.
+The team strongly encourages everyone to enhance their program and robot build as true engineering involves not only creating solutions but also sharing ideas with others to drive innovation forward. You may refer to the team's [Recommendations](#7-recommendations) for the team's insights on how you can improve their work. By building upon each other's work, we can collectively advance the project to new levels, allowing it to evolve and reach its full potential through teamwork.
 
