@@ -38,7 +38,7 @@ Meet the members of the BSU Spartan Team, each bringing unique skills and dedica
 * [Introduction](#introduction)
 * [Robot Specifications](#robot-specifications)
 * [1. Mobility Management](#1-mobility-management)
-* [2. Power And Sense Management](#2-power-and-sense-management)
+* [2. Power and Sense Management](#2-power-and-sense-management)
 * [3. Obstacle Management](#3-obstacle-management)
 * [4. Engineering Factor](#4-engineering-factor)
 * [5. Recommendations](#5-recommendations)
@@ -358,6 +358,8 @@ The robot has come a long way since its development, yet there are still areas w
 4. Connect the hub to the computer with Bluetooth. Click the `Bluetooth` icon on the top-right, choose which hub you plan to connect, then click `Pair`. 
 
 5. To run the program to the hub, click the `Run this program` button or press `F5`. To stop the program, click the `Stop everything` button or press `F6`.
+
+6. To upload the program to the hub, Pybricks automatically downloads the program you ran to the hub. This means that whenever you run the program to the hub, it is also saved there at the same time.
 
 ### 6.3. Final Step
 
