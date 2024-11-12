@@ -2,9 +2,9 @@
 ***
 
 # BSU Spartan Team
-[![Guidelines](https://img.shields.io/badge/FE-Guidelines-2e52af)](https://wro-association.org/wp-content/uploads/WRO-2024-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
-[![YouTube - OPEN CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OPEN_CHALLENGE-df3e3e?logo=youtube)](https://youtu.be/06rUdOECv34?si=MXno1v4bBEbKgmpB)
-[![YouTube - OBSTACLE CHALLENGE](https://img.shields.io/badge/YouTube-▶️%20OBSTACLE_CHALLENGE-df3e3e?logo=youtube)](https://youtu.be/ykb_tLmTXMM?si=5-LzPXuHlno7lfPP)
+[![](https://img.shields.io/badge/FE-Rulebook-2e52af)](https://wro-association.org/wp-content/uploads/WRO-2024-Future-Engineers-Self-Driving-Cars-General-Rules.pdf)
+[![](https://img.shields.io/badge/YouTube-▶️%20OPEN_CHALLENGE-df3e3e?logo=youtube)](https://youtu.be/06rUdOECv34?si=MXno1v4bBEbKgmpB)
+[![](https://img.shields.io/badge/YouTube-▶️%20OBSTACLE_CHALLENGE-df3e3e?logo=youtube)](https://youtu.be/ykb_tLmTXMM?si=5-LzPXuHlno7lfPP)
 
 This repository provides the BSU Spartan Team’s self-driving car, developed and programmed by our team from the Philippines for the Future Engineers Category. Here, you’ll find details about the robot’s design, functionality, and features, reflecting our dedication to pushing the boundaries of autonomous technology.
 
@@ -56,16 +56,17 @@ This engineering documentation provides an overview of the BSU Spartan Team's se
 
 The BSU Spartan Team presents this self-driving robot for the World Robot Olympiad Turkiye 2024 International Finals. Designed with precision, agility, and performance in mind, this robot embodies innovation and teamwork by our duo. Engineered to meet the demands of the competition, the Spartan robot features a compact design built with LEGO® and OpenMV Cam H7 Plus, offering optimal speed, maneuverability, and power efficiency. Below are the specifications that highlight the robot’s capabilities, reflecting our team's commitment to excellence and readiness to compete on the global stage.
 
-Below are the specifications of the BSU Spartan Team's robot:
 - **Dimensions**: 195mm (L) x 160mm (W) x 230mm (H)
 - **Weight**: 1.23kg
-- **Speed**: 6.53m/s
+- **Maximum Speed**: 6.53m/s
 - **Maximum Steer**: ±60°
 - **Steering Torque**: 100Ncm
 - **Working Voltage**: 8.3V–7.6V
 - **Drive System**: Rear-wheel drive (RWD)
 - **Steering Geometry**: Parallel steering
 - **Material**: LEGO® Technic
+
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/0.2.png?">
 
 ***
 
@@ -289,6 +290,8 @@ The robot is equipped with free wheels on its sides, allowing for uninterrupted 
 <img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/4.0.2.png?">
 
 The OpenMV Cam H7 Plus is securely placed inside the custom-designed LEGO camera mount which was uniquely designed by the team. The mount structures integrate LEGO components, making it easy to attach the camera onto the rotating large motors. This LEGO design maintains its uniformity with the overall robot and allows for convenient attachment of additional external components, such as a color sensor placed behind the camera.
+
+<img src = "https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Discussion%20Images/4.0.3.png?">
 
 ***
 
