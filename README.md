@@ -33,7 +33,7 @@ Meet the members of the BSU Spartan Team, each bringing unique skills and dedica
 * [`Video Performance`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Video%20Performance) contains 2 video links showcasing each challenge round.
 * [`Wiring Diagram`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Wiring%20Diagram) contains 2 pictorial wiring diagrams of the whole robot including all of its components.
 
-## Engineering Documentation Quicklinks
+## Engineering Documentation Quick links
 
 * [Introduction](#introduction)
 * [Robot Specifications](#robot-specifications)
