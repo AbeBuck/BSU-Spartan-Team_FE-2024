@@ -63,7 +63,6 @@ Below are the specifications of the BSU Spartan Team's robot:
 - **Maximum Steer**: ±60°
 - **Steering Torque**: 100Ncm
 - **Working Voltage**: 8.3V–7.6V
-- **Turning Radius**: 100mm?
 - **Drive System**: Rear-wheel drive (RWD)
 - **Steering Geometry**: Parallel steering
 - **Material**: LEGO® Technic
