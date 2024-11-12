@@ -18,14 +18,15 @@ This repository provides information pertaining to the robot of the BSU Spartan 
 
 ## Content
 
-* `Bills of Materials` contains the list of all the items necessary to build the robot.
-* `Discussion Images` contains all the images that is showcased in this file.
-* `Source Code` contains the main and other programs of the robot.
-* `Team Photos` contains multiple photos of the whole team.
-* `Vehicle Chassis` contains 6 photos of the chassis of the vehicle from every sides.
-* `Vehicle Photos` contains 6 photos of the vehicle from every sides and 1 main photo of the vehicle.
-* `Video Performance` contains 2 video links showcasing each challenge round.
-* `Wiring Diagram` contains 2 pictorial wiring diagrams of the whole robot including all of its components.
+* [`Bills of Materials`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Bills%20of%20Materials) contains the list of all the items necessary to build the robot.
+* [`Discussion Images`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Discussion%20Images) contains all the images that is showcased in this README.md file.
+* [`Source Code`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Source%20Code) contains the main and other programs of the robot.
+* [`Team Photos`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Team%20Photos) contains multiple photos of the whole team.
+* [`Vehicle Building Instructions`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Vehicle%20Building%20Instructions) contains the step by step instructions to contruct the robot.
+* [`Vehicle Photos`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Vehicle%20Photos) contains 6 photos of the vehicle from every sides and 1 isometric photo of the vehicle.
+* [`Vehicle Virtual Model`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Vehicle%20Virtual%20Model) contains multiple images of the vehicle's virtual model.
+* [`Video Performance`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Video%20Performance) contains 2 video links showcasing each challenge round.
+* [`Wiring Diagram`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Wiring%20Diagram) contains 2 pictorial wiring diagrams of the whole robot including all of its components.
 
 ## 
 
