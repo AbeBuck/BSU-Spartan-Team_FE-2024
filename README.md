@@ -21,7 +21,7 @@ Meet the members of the BSU Spartan Team, each bringing unique skills and dedica
 
 ***
 
-## Content
+## List of Directories
 
 * [`Bills of Materials`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Bills%20of%20Materials) contains the list of all the items necessary to build the robot.
 * [`Discussion Images`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Discussion%20Images) contains all the images that is showcased in this README.md file.
@@ -33,7 +33,7 @@ Meet the members of the BSU Spartan Team, each bringing unique skills and dedica
 * [`Video Performance`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Video%20Performance) contains 2 video links showcasing each challenge round.
 * [`Wiring Diagram`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/tree/main/Wiring%20Diagram) contains 2 pictorial wiring diagrams of the whole robot including all of its components.
 
-## Engineering Documentation Quicklinks
+## Main Content
 
 * [Introduction](#introduction)
 * [Robot Specifications](#robot-specifications)
