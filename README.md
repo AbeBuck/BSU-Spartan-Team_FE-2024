@@ -335,13 +335,13 @@ The robot has come a long way since its development, yet there are still areas w
 
 ### 6.2. Program Construction Guide
 
-#### OpenMV Cam H7 Plus Program Guide
+#### Camera Program Guide
 
 1. Prepare [OpenMV IDE](https://openmv.io/pages/download) which is necessary for the compilation of the program to the robot's camera.
 
-2. You will need these external libraries made by AntonsMindstorms: [`pupremote.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/OpenMV%20Cam%20H7%20Plus%20Source%20Codes/pupremote.py) and [`lpf2.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/OpenMV%20Cam%20H7%20Plus%20Source%20Codes/lpf2.py). This library allows the robot's camera to transfer its data to the robot's microcontroller.
+2. You will need these external libraries made by AntonsMindstorms: [`pupremote.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/Camera%20Source%20Code/pupremote.py) and [`lpf2.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/Camera%20Source%20Code/lpf2.py). This library allows the robot's camera to transfer its data to the robot's microcontroller.
 
-3. To begin programming, you are first recommended to read the [OpenMV Cam Documentation](https://docs.openmv.io/index.html) to understand how the functions and the whole codebase works. OpenMV IDE has a default starting program which you can freely edit. The team have provided their program which can be found here: [`FE_ObstacleRecognition.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/OpenMV%20Cam%20H7%20Plus%20Source%20Codes/FE_ObstacleRecognition.py). 
+3. To begin programming, you are first recommended to read the [OpenMV Cam Documentation](https://docs.openmv.io/index.html) to understand how the functions and the whole codebase works. OpenMV IDE has a default starting program which you can freely edit. The team have provided their program which can be found here: [`FE_ObstacleRecognition.py`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/Camera%20Source%20Code/FE_ObstacleRecognition.py). 
 
 4. Connect the camera to the computer with a use of an USB cable. The camera's LED should blink green multiple times and white once, indicating that the camera has been successfully detected by the computer. With the OpenMV IDE, click the `Connect` button on the bottom-left or press `Ctrl+E` to connect the camera to the application. The `Run Script` button below should turn green, indicating that the camera is successfully connected to the OpenMV IDE. 
 
