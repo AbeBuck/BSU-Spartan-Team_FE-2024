@@ -1,6 +1,6 @@
-import image, sensor, time
+import sensor, time
 from micropython import const
-from pupremote import PUPRemoteSensor, OPENMV
+from pupremote import PUPRemoteSensor
 
 camera = PUPRemoteSensor(power = True)
 camera.add_channel('blob', to_hub_fmt = 'hhhhhh')
@@ -8,10 +8,22 @@ camera.add_channel('blob', to_hub_fmt = 'hhhhhh')
 sensor.reset()
 sensor.set_pixformat(sensor.RGB565)
 sensor.set_framesize(sensor.QVGA)
-sensor.skip_frames(time = 500)
+sensor.skip_frames(time = 1000)
 sensor.set_vflip(True)
 sensor.set_hmirror(True)
 clock = time.clock()
+
+screenWidth = sensor.width()
+screenHeight = sensor.height()
+roiX= int(0.0 * screenWidth)
+roiY = int(0.3 * screenHeight)
+roiWidth = screenWidth - roiX * 2
+roiHeight = screenHeight - roiY
+roi = (roiX, roiY, roiWidth, roiHeight)
+
+sensor.set_windowing(roi)
+
+contestMode = False
 
 _GREEN = const((0, 100, -128, -10, 20, 127))
 _RED = const((0, 100, 7, 127, -10, 127))
@@ -20,11 +32,11 @@ _RED = const((0, 100, 7, 127, -10, 127))
 while True:
     img = sensor.snapshot()
 
-    gBlobs = img.find_blobs([_GREEN], roi = [0, 0, 320, 240], pixels_threshold = 150)
+    gBlobs = img.find_blobs([_GREEN], pixels_threshold = 400)
     gBlob, gPix, gCx, gCy = None, 0, 0, 0
 
     for g in gBlobs:
-        if ((g.h() > g.w() or (g.y() + g.h()) == 240) and g.pixels() > gPix and g.density() > 0.6):
+        if ((g.h() > g.w() or (g.y() + g.h()) == roiHeight) and g.pixels() > gPix):
             gPix = g.pixels()
             gBlob = g
 
@@ -32,9 +44,10 @@ while True:
         gDen = gBlob.density()
         gCx = gBlob.cx()
         gCy = gBlob.cy()
-        img.draw_rectangle(gBlob.rect(), (238, 39, 55), 2)
 
-    rBlobs = img.find_blobs([_RED], roi = [80, 0, 160, 240], pixels_threshold = 250)
+        img.draw_rectangle(gBlob.rect(), (238, 39, 55), 1)
+
+    rBlobs = img.find_blobs([_RED], pixels_threshold = 400)
     rBlob, rPix, rCx, rCy = None, 0, 0, 0
 
     for r in rBlobs:
@@ -42,12 +55,11 @@ while True:
             rPix = r.pixels()
             rBlob = r
 
-    img.draw_rectangle([80, 0, 160, 240], thickness = 2)
-
     if (rBlob != None):
         rCx = rBlob.cx()
         rCy = rBlob.cy()
-        img.draw_rectangle(rBlob.rect(), color = (68, 214, 44), thickness = 2)
+        img.draw_rectangle(rBlob.rect(), color = (68, 214, 44), thickness = 1)
 
+    print(gPix, rPix)
     camera.update_channel('blob', gCx, gCy, gPix, rCx, rCy, rPix)
     camera.process()
