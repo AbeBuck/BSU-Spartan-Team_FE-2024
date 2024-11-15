@@ -1,401 +1,400 @@
 from FE_Functions import *
 
-def obstacleLoopClockwise(recordListInput):
-    driveMotor = Motor(Port.B, Direction.COUNTERCLOCKWISE, [1], False, 500);
-    steerMotor = Motor(Port.D, Direction.COUNTERCLOCKWISE, [1], False, 5);
-    visionMotor = Motor(Port.E, Direction.CLOCKWISE, [1], False, 5);
-    
-    selfDrivingCar = FutureEngineers(steerMotor, driveMotor, visionMotor);
+def nNormalnRedfGreen(monke):
+    monke.fastAcceleration(False)
+    monke.street(50, 0, 1000, 1000)
+    monke.fastAcceleration(True)
+    monke.look(0, False)
+    monke.turn(1, 35, 40, 2000, 2000)
+    monke.street(480, 35, 2000, 2000)
+    monke.turn(1, 90, 40, 2000, 2000)
+    monke.streetLine(1, 90, 2000, 2000)
 
-    parkingPresence, trafficSign, recordListValue = "", "", [];
+    monke.street(400, 150, 2000, 2000)
+    monke.look(LEFT, False)
+    monke.turn(1, 90, 40, 1000, 750)
+    monke.streetStall(150, 90, 750, 700, 100)
 
-    timer.reset();
-    # steerMotor.run_target(1000, 0, Stop.HOLD, True);
-    visionMotor.run_target(1000, 100, Stop.HOLD, False);
+def obstacleCounterclockwise(recordListInput, robotLaps):
+    driveMotor = Motor(Port.A, Direction.CLOCKWISE, [1], False, 500)
+    steerMotor = Motor(Port.B, Direction.COUNTERCLOCKWISE, [1], False, 5)
+    visionMotor = Motor(Port.F, Direction.CLOCKWISE, [1], False, 5)
 
-    if (recordListInput == ["", "", "", ""]):
-        parkingPresence = ifParking(650);
-        recordListValue.append(parkingPresence);
-        print("n" + parkingPresence, end = " ");
-    else:
-        parkingPresence = recordListInput[0];
+    monke = FutureEngineers(driveMotor, steerMotor, visionMotor)
 
-    selfDrivingCar.street(-400, 0, 650, 600);
-    trafficSign = selfDrivingCar.streetDetect(-100, 0, 600); # dapat ay total of -500
+    parking, trafficSign, recordListValue = "", "", []
 
-    if (recordListInput == ["", "", "", ""]):
-        if (trafficSign == "None"):
-            print("false", end = " ");
-            trafficSign = trafficSignColor();
+    try:
+        hub.imu.reset_heading(0)
+        clock.reset()
+        monke.look(LEFT, False)
 
-        recordListValue.append(trafficSign);
-        print("n" + trafficSign, end = " ");
-    else:
-        trafficSign = recordListInput[1];
+        parking = RECORDPARKING(750, 200, recordListInput[0], recordListValue, "n")
 
-    if (trafficSign == "Red"):
-        # n? nRed
+        monke.look(-100, False)
+        monke.driveMotor.control.limits(acceleration= 800)
+        monke.street(-100, 0, 2000, 2000)
+        monke.fastAcceleration(True)
+        monke.street(-150, 0, 2000, 2000)
 
-        selfDrivingCar.smartStop(0);
-        selfDrivingCar.street(50, 0, 300, 290);
-        driveMotor.hold();
-        visionMotor.run_target(1000, 0, Stop.HOLD, False);
-        selfDrivingCar.turn(-1, 76, 65, 900, 550);
-        selfDrivingCar.streetStall(-100, 90, 700, 650, 800);
-        selfDrivingCar.street(950, 0, 900, 750);
+        trafficSign = monke.STREETDETECT(-200, 0, 950, recordListInput[1], recordListValue, "n")
 
-        if (recordListInput == ["", "", "", ""] or recordListInput[3] == "Green"):
-            visionMotor.run_target(1000, 100, Stop.HOLD, False);
-            selfDrivingCar.turn(1, -95, 30, 850, 750);
-            # selfDrivingCar.turn(1, -90, 30, 750, 700)
-            selfDrivingCar.streetStall(200, -90, 700, 500, 800);
+        if (trafficSign[0] == "Red"):
+            # n? nRed
 
-            if (recordListInput == ["", "", "", ""]):
-                if (parkingPresence == "Normal"):
-                    parkingPresence = ifParking(600);
-                    parkingPresenceBypass = 0;
-                else:
-                    parkingPresence = "Normal";
-                    parkingPresenceBypass = 1;
-                
-                recordListValue.append(parkingPresence);
-                print("f" + parkingPresence, end = " ");
+            if (parking == "Parking"):
+                # nParking nRed fNormal
 
-            else:
-                if (parkingPresence == "Normal"):
-                    parkingPresenceBypass = 0;
-                else:
-                    parkingPresenceBypass = 1;
+                parking = RECORDPARKING(0, 0, recordListInput[2], recordListValue, "f", fixed = "Normal")
 
-                parkingPresence = recordListInput[2];
+                monke.fastAcceleration(True)
+                monke.street(-400, 0, 700, 350)
+                monke.HOLD(100)
 
-            selfDrivingCar.street(-350, 6, 800, 600);
-            trafficSign = selfDrivingCar.streetDetect(-180, 0, 600); # dapat ay total of -530
+                monke.fastAcceleration(False)
+                monke.street(130, 0, 2000, 2000)
+                monke.look(0, False)
+                monke.fastAcceleration(True)
+                monke.turn(1, -90, 40, 2000, 2000)
+                monke.street(100, -90, 2000, 2000)
+                monke.HOLD(100)
 
-            if (recordListInput == ["", "", "", ""]):
-                if (trafficSign == "None"):
-                    print("false", end = " ");
-                    trafficSign = trafficSignColor();
-                
-                recordListValue.append(trafficSign);
-                print("f" + trafficSign);
-            else:
-                trafficSign = recordListInput[3];
+                monke.fastAcceleration(False)
+                monke.streetLine(-10, -90, 850, 600)
+                monke.street(-100, -90, 600, 450)
 
-            if (trafficSign == "Red" or trafficSign == "None"):
-                # nNormal nRed fNormal fRed
-                # nParking nRed fNormal fRed
-                # nNormal nRed fParking fRed
+                monke.look(-8, False)
+                monke.fastAcceleration(False)
+                monke.streetLine(1, -90, 2000, 2000)
+                monke.fastAcceleration(True)
+                monke.street(400, -90, 2000, 2000)
 
-                driveMotor.hold();
-                visionMotor.run_target(1000, 0, Stop.HOLD, False);
-                selfDrivingCar.street(10, 0, 300, 290);
-                driveMotor.hold();
-                selfDrivingCar.turn(-1, 86, 65, 800, 450);
-                selfDrivingCar.smartStop(90);
-                selfDrivingCar.streetLine(700, 90, 900, 850);
+                trafficSign = RECORDTRAFFICSIGN(recordListInput[3], recordListValue, "f")
 
-        else:
-            # nNormal nRed f? fRed/None
-            # nParking nRed f? fRed/None
+                monke.fastAcceleration(True)
+                monke.street(600, -90, 2000, 2000)
+                monke.look(LEFT, False)
+                monke.turnSemi(1, 0, 10, 40, 600, 400)
+                monke.streetStall(1, 0, 1000, 1000, 300)
 
-            selfDrivingCar.street(60, 15, 800, 750);
-            selfDrivingCar.streetLine(350, 0, 900, 850);
-            hub.imu.reset_heading(90);
+                if (trafficSign[0] == "Green"):
+                    # nParking nRed fNormal fGreen
 
-        if (trafficSign == "Red" or trafficSign == "None"):
-            selfDrivingCar.turn(1, 50, 30, 850, 550);
-            selfDrivingCar.street(470, 60, 850, 750);
-            visionMotor.run_target(1000, 100, Stop.HOLD, False);
-            selfDrivingCar.turn(1, 90, 30, 750, 550);
-            selfDrivingCar.streetStall(50, 90, 550, 500, 500);
+                    monke.driveMotor.control.limits(acceleration= 800)
+                    monke.street(-250, 0, 2000, 2000)
+                    monke.fastAcceleration(True)
+                    monke.street(-250, 0, 2000, 2000)
+                    monke.look(0, False)
+                    monke.turn(-1, -92, 50, 850, 600)
+                    monke.street(-100, -92, 500, 300)
+                    monke.HOLD(100)
 
-        else:
-            # nNormal nRed f? fGreen
-            # nParking nRed f? fGreen
+                    monke.fastAcceleration(False)
+                    monke.street(150, -90, 2000, 2000)
+                    monke.fastAcceleration(True)
+                    monke.streetLine(100, -90, 2000, 2000)
 
-            if ((parkingPresence == "Parking") or parkingPresenceBypass):
-                # nParking nRed fNormal fGreen
-                # nNormal nRed fParking fGreen
-
-                # selfDrivingCar.street(-50, 0, 620, 600);
-                driveMotor.hold();
-                # selfDrivingCar.street(1, 0, 800, 750);
-                visionMotor.run_target(1000, 0, Stop.HOLD, False);
-                selfDrivingCar.turn(1, 90, 30, 750, 450);
-                selfDrivingCar.street(100, 80, 850, 800);
-                selfDrivingCar.streetLine(500, 90, 900, 850);
-
-                visionMotor.run_target(1000, 100, Stop.HOLD, False);
-                selfDrivingCar.street(400, 90, 800, 750);
-                selfDrivingCar.streetStall(200, 90, 750, 550, 500);
-
-            else:
-                # nNormal nRed fNormal fGreen
-
-                driveMotor.hold();
-                selfDrivingCar.street(180, 0, 900, 850);
-                visionMotor.run_target(1000, 0, Stop.HOLD, False);
-                selfDrivingCar.turn(1, 85, 30, 850, 750);
-                selfDrivingCar.drive(500, 950, 850, -8, 0);
-                selfDrivingCar.turn(1, 120, 40, 850, 750);
-                selfDrivingCar.street(700, 120, 850, 800);
-                visionMotor.run_target(1000, 100, Stop.HOLD, False);
-                selfDrivingCar.turn(1, 90, 40, 800, 600);
-                selfDrivingCar.streetStall(10, 90, 500, 500, 400);
-
-    else:
-        # n? nGreen
-
-        if (parkingPresence == "Parking"):
-            # nParking nGreen
-            
-            if (recordListInput == ["", "", "", ""]):
-                recordListValue.append("Normal");
-                print("fNormal", end = " ");
-
-            # selfDrivingCar.street(-70, 0, 600, 550);
-            driveMotor.hold();
-            visionMotor.run_target(1000, 0, Stop.HOLD, False)
-            selfDrivingCar.turn(1, 93, 30, 750, 650);
-            driveMotor.hold();
-            selfDrivingCar.streetLine(-100, 92, 650, 550);
-            driveMotor.hold();
-
-            visionMotor.run_target(1000, 15, Stop.HOLD, False)
-            selfDrivingCar.street(500, 92, 750, 650);
-
-            if (recordListInput == ["", "", "", ""]):
-                trafficSign = trafficSignColor();
-                # trafficSign = "None";
-                recordListValue.append(trafficSign);
-                print("f" + trafficSign, end = " ");
-            else:
-                trafficSign = recordListInput[3];
-
-            if (trafficSign == "Red"):
-                # nParking nGreen fNormal fRed
-                print("");
-                
-                visionMotor.run_target(1000, 0, Stop.HOLD, False)
-                # selfDrivingCar.street(500, 180, 800, 600);
-                # selfDrivingCar.streetStall(100, 180, 500, 300, 400);
-                selfDrivingCar.turnDuration(490, 180, 30, 700, 550);
-                selfDrivingCar.streetStall(100, 180, 350, 300, 400);
-
-                selfDrivingCar.street(-300, 0, 750, 650);
-                driveMotor.hold();
-                selfDrivingCar.turn(1, -90, 30, 850, 750);
-                selfDrivingCar.streetLine(200, -90, 900, 850);
-
-                selfDrivingCar.turn(1, -130, 30, 850, 750);
-                selfDrivingCar.street(300, -130, 850, 750);
-                visionMotor.run_target(1000, 100, Stop.HOLD, False);
-                selfDrivingCar.turn(1, -90, 30, 750, 550);
-                selfDrivingCar.streetStall(100, -90, 550, 500, 500);
-
-            elif (trafficSign == "Green"):
-                # nParking nGreen fNormal fGreen
-                print("");
-
-                visionMotor.run_target(1000, 0, Stop.HOLD, False);
-                selfDrivingCar.street(370, 90, 900, 850);
-                selfDrivingCar.turn(1, 60, 30, 750, 650);
-                selfDrivingCar.street(70, 60, 750, 750);
-                selfDrivingCar.turn(1, 90, 30, 750, 650);
-                selfDrivingCar.street(300, 90, 850, 750);
-                selfDrivingCar.turn(1, 120, 30, 850, 750);
-
-                selfDrivingCar.street(300, 120, 850, 750);
-                visionMotor.run_target(1000, 100, Stop.HOLD, False);
-                selfDrivingCar.turn(1, 90, 30, 850, 650);
-                selfDrivingCar.streetStall(200, 90, 650, 500, 400);
-
-            else:
-                # nParking nGreen fNormal fNone false f
-
-                selfDrivingCar.street(300, 92, 900, 850);
-
-                trafficSign = trafficSignColor();
-                recordListValue[3] = trafficSign;
-                print("false f" + trafficSign);
-
-                if (trafficSign == "Red"):
-                    # nParking nGreen fNormal false fRed
-
-                    visionMotor.run_target(1000, 0, Stop.HOLD, False);
-                    selfDrivingCar.street(200, 92, 900, 850);
-                    # selfDrivingCar.street(500, 180, 800, 600);
-                    # selfDrivingCar.streetStall(100, 180, 500, 300, 500);
-                    selfDrivingCar.turnDuration(490, 180, 30, 700, 550);
-                    selfDrivingCar.streetStall(100, 180, 350, 300, 400);
-
-                    selfDrivingCar.street(-310, 0, 750, 650);
-                    driveMotor.hold();
-                    selfDrivingCar.turn(1, -130, 30, 850, 750);
-                    selfDrivingCar.street(310, -120, 850, 750);
-                    visionMotor.run_target(1000, 100, Stop.HOLD, False);
-                    selfDrivingCar.turn(1, -90, 30, 750, 550);
-                    selfDrivingCar.streetStall(200, -90, 700, 550, 500);
+                    monke.turn(1, -40, 40, 2000, 2000)
+                    monke.street(100, -40, 2000, 2000)
+                    monke.look(LEFT, False)
+                    monke.turn(1, -90, 40, 1000, 750)
+                    monke.streetStall(200, -90, 750, 700, 100)
 
                 else:
-                    # nParking nGreen fNormal false fGreen
+                    # nParking nRed fNormal fRed
 
-                    visionMotor.run_target(1000, 0, Stop.HOLD, False);
-                    selfDrivingCar.street(70, 90, 760, 750);
-                    selfDrivingCar.turn(1, 60, 30, 750, 650);
-                    selfDrivingCar.street(70, 60, 750, 750);
-                    selfDrivingCar.turn(1, 90, 30, 750, 650);
-                    selfDrivingCar.street(300, 90, 850, 750);
-                    selfDrivingCar.turn(1, 120, 30, 850, 750);
+                    monke.driveMotor.control.limits(acceleration= 800)
+                    monke.street(-50, 0, 2000, 2000)
+                    monke.look(0, False)
+                    monke.fastAcceleration(True)
+                    monke.turn(-1, -92, 50, 850, 600)
+                    monke.street(-200, -92, 600, 400)
+                    monke.HOLD(100)
 
-                    selfDrivingCar.street(300, 120, 850, 750);
-                    visionMotor.run_target(1000, 100, Stop.HOLD, False);
-                    selfDrivingCar.turn(1, 90, 30, 850, 650);
-                    selfDrivingCar.streetStall(200, 90, 650, 500, 400);
+                    monke.fastAcceleration(False)
+                    monke.street(150, -90, 2000, 2000)
+                    monke.fastAcceleration(True)
+                    monke.streetLine(100, -90, 2000, 2000)
+                    monke.street(250, -155, 2000, 2000)
+                    monke.look(LEFT, False)
+                    monke.streetStall(300, -90, 2000, 1000, 100)
+                
+            else: 
+                # nNormal nRed
 
-        else:
-            # nNormal nGreen
+                monke.fastAcceleration(True)
+                monke.street(-300, 0, 700, 400)
+                monke.HOLD(100)
 
-            driveMotor.hold();
-            selfDrivingCar.street(130, 0, 850, 800);
-            visionMotor.run_target(1000, 3, Stop.HOLD, False);
-            selfDrivingCar.turn(1, 91, 30, 800, 600);
-            driveMotor.hold();
-            selfDrivingCar.streetLine(-100, hub.imu.heading(), 700, 550);
-            driveMotor.hold();
-            selfDrivingCar.drive(700, 850, 750, -8, 4);
+                monke.fastAcceleration(False)
+                monke.street(100, 0, 2000, 2000)
+                monke.fastAcceleration(True)
+                monke.street(230, 0, 2000, 2000)
+                monke.look(0, False)
+                monke.turn(1, -87, 40, 850, 750)
+                monke.HOLD()
 
-            if (recordListInput == ["", "", "", ""]):
-                driveMotor.hold();
-                visionMotor.run_target(1000, (90 - hub.imu.heading()), Stop.HOLD, True);
+                monke.fastAcceleration(False)
+                monke.streetLine(-100, -100, 850, 600)
+                monke.street(-200, -85, 600, 400)
+                monke.HOLD()
 
-                distanceLowest = 2000;
-                timer.reset();
+                monke.fastAcceleration(False)
+                monke.driveLine(1, 2000, 2000, 5, 5)
+                monke.fastAcceleration(True)
+                monke.drive(550, 2000, 2000, 3, 3)
 
-                while (timer.time() < 200):
-                    if (distanceSensor.distance() < distanceLowest):
-                        distanceLowest = distanceSensor.distance();
+                if (recordListInput[2] == "Parking"):
+                    monke.drive(100, 2000, 2000, 3, 3)
+                else:
+                    monke.HOLD()
+                
+                parking = RECORDPARKING(700, 200, recordListInput[2], recordListValue, "f")
 
-                if (recordListInput == ["", "", "", ""]):
-                    if (distanceLowest < 1400):
-                        parkingPresence = "Parking";
+                if (parking == "Parking"):
+                    # nNormal nRed fParking 
+                    
+                    monke.driveMotor.control.limits(acceleration= 800)
+                    monke.look(RIGHT, False)
+                    monke.turn(1, -179, 40, 850, 750)
+                    monke.fastAcceleration(True)
+                    
+                    trafficSign = monke.STREETDETECT(150, -180, 2000, recordListInput[3], recordListValue, "f")
+                    monke.HOLD()
+                    
+                    monke.driveMotor.control.limits(acceleration= 800)
+                    monke.street(-50, -180, 2000, 2000)
+                    monke.fastAcceleration(True)
+                    monke.streetStall(-300, -180, 700, 900, 200)
+
+                    if (trafficSign[0] == "Green"):
+                        # nNormal nRed fParking fGreen
+
+                        nNormalnRedfGreen(monke)
+
                     else:
-                        parkingPresence = "Normal"
+                        # nNormal nRed fParking fRed 
 
-                    recordListValue.append(parkingPresence);
-                    print("f" + parkingPresence, end = " ");
+                        monke.driveMotor.control.limits(acceleration=800)
+                        monke.look(0, False)
+                        monke.turn(1, 90, 27, 2000, 2000)
+                        monke.fastAcceleration(True)
+                        monke.streetLine(600, 90, 2000, 2000)
+
+                        monke.turn(1, 60, 40, 2000, 2000)
+                        monke.street(150, 60, 2000, 2000)
+                        monke.look(LEFT, False)
+                        monke.streetStall(150, 90, 2000, 1000, 100)
+
                 else:
-                    parkingPresence = recordListInput[2];
+                    # nNormal nRed fNormal
+
+                    trafficSign = monke.CAMERASCAN(-20, -40, 100, recordListInput[3], recordListValue, "f")
+
+                    if (trafficSign[0] == "Green"): 
+                        # nNormal nRed fNormal fGreen
+
+                        monke.fastAcceleration(False)
+                        monke.drive(100, 2000, 2000, 1, 1)
+                        monke.look(RIGHT, False)
+                        monke.fastAcceleration(True)
+                        monke.turn(1, -181, 40, 850, 750)
+                        monke.HOLD()
+                        monke.driveMotor.control.limits(acceleration= 800)
+                        monke.street(-150, -180, 2000, 2000)
+                        monke.fastAcceleration(True)
+                        monke.streetStall(-200, -180, 600, 900, 200)
+
+                        monke.fastAcceleration(False)
+                        monke.street(50, 0, 1000, 1000)
+                        monke.fastAcceleration(True)
+                        monke.look(0, False)
+                        monke.turn(1, 35, 40, 2000, 2000)
+                        monke.street(480, 35, 2000, 2000)
+                        monke.turn(1, 90, 40, 2000, 2000)
+                        monke.streetLine(1, 90, 2000, 2000)
+
+                        monke.street(400, 150, 2000, 2000)
+                        monke.look(LEFT, False)
+                        monke.turn(1, 90, 40, 1000, 750)
+                        monke.streetStall(150, 90, 750, 700, 100)
+
+                    else:
+                        # nNormal nRed fNormal fRed
+                        
+                        monke.look(0, False)
+                        monke.fastAcceleration(False)
+                        monke.drive(100, 2000, 2000, 3, 3)
+                        monke.fastAcceleration(True)
+                        monke.drive(1100, 2000, 2000, 3, 1)
+
+                        monke.street(630, -160, 2000, 2000)
+                        monke.look(LEFT, False)
+                        monke.streetStall(700, -90, 2000, 2000, 200)
+
+
+
+        else:
+            # n? nGreen
+
+            monke.look(0, False)
+            monke.fastAcceleration(True)
+            monke.street(-50, 0, 2000, 2000)
+            monke.turn(-1, -92, 40, 850, 600)
+            monke.streetStall(-200, -90, 2000, 500, 200)
+
+            monke.fastAcceleration(False)
+            monke.street(100, 0, 2000, 2000)
+            monke.fastAcceleration(True)
+            monke.street(950, 0, 2000, 2000)
+
+            if (parking == "Parking"):
+                # nParking nGreen fNormal
+
+                parking = RECORDPARKING(0, 0, recordListInput[0], recordListValue, "f", fixed = "Normal")
+
+                monke.look(30, False)
+                monke.fastAcceleration(True)
+                monke.street(600, 0, 2000, 2000)
+
+                trafficSign = RECORDTRAFFICSIGN(recordListInput[3], recordListValue, "f")
+
+                if (trafficSign[0] == "Red"):
+                    # nParking nGreen fNormal fRed
+
+                    monke.look(0, False)
+                    monke.turnSemi(1, 50, 55, 40, 2000, 2000)
+                    monke.street(400, 60, 2000, 2000)
+                    monke.turn(1, -50, 40, 2000, 2000)
+                    monke.look(LEFT, False)
+                    monke.turn(1, 0, 40, 2000, 2000)
+                    monke.streetStall(300, 0, 2000, 2000, 100)
+
+                else:
+                    # nParking nGreen fNormal fGreen
+
+                    monke.look(0, False)
+                    monke.fastAcceleration(True)
+                    monke.streetLine(350, 0, 2000, 2000)
+
+                    monke.turn(1, 50, 40, 2000, 2000)
+                    monke.street(100, 50, 2000, 2000)
+                    monke.look(LEFT, False)
+                    monke.turn(1, 0, 40, 1000, 750)
+                    monke.streetStall(200, 0, 750, 700, 100)
 
             else:
-                pass;
+                # nNormal nGreen
 
-            if (parkingPresence == "Parking"):
-                # nNormal nGreen fParking
+                monke.look(LEFT, False)
+                monke.fastAcceleration(True)
+                monke.turn(1, 90, 40, 2000, 2000)
+                monke.streetStall(400, 90, 900, 800, 200)
 
-                selfDrivingCar.turn(1, 180, 30, 850, 750);
-                driveMotor.hold();
-                selfDrivingCar.streetStall(-350, 180, 900, 850, 800);
+                parking = RECORDPARKING(600, 200, recordListInput[2], recordListValue, "f")
 
-                visionMotor.run_target(1000, -100, Stop.HOLD, False);
-                selfDrivingCar.street(250, 0, 800, 600);
+                monke.look(LEFT, False)
+                monke.driveMotor.control.limits(acceleration= 800)
+                monke.street(-100, 0, 2000, 2000)
+                monke.fastAcceleration(True)
+                monke.street(-150, 0, 2000, 2000)
 
-                trafficSign = selfDrivingCar.streetDetect(150, 0, 600); # dapat ay total of 500
+                trafficSign = monke.STREETDETECT(-200, 0, 950, recordListInput[3], recordListValue, "f")
 
-                if (recordListInput == ["", "", "", ""]):
-                    if (trafficSign == "None"):
-                        print("false", end = " ");
-                        trafficSign = trafficSignColor();
-                    
-                    recordListValue.append(trafficSign);
-                    print("f" + trafficSign);
-                else:
-                    trafficSign = recordListInput[3];
+                if (trafficSign[0] == "Red"):
+                    # nNormal nGreen f? fRed
 
-                if (trafficSign == "Red"):
-                    # nNormal nGreen fParking fRed
+                    if (parking == "Parking"):
+                        # nNormal nGreen fParking fRed
 
-                    visionMotor.run_target(1000, 0, Stop.HOLD, False);
-                    selfDrivingCar.turn(1, -90, 30, 750, 650);
-                    selfDrivingCar.streetLine(300, -90, 900, 850);
+                        monke.fastAcceleration(True)
+                        monke.street(-400, 0, 700, 350)
+                        monke.HOLD(100)
 
-                    selfDrivingCar.turn(1, -130, 30, 850, 750);
-                    selfDrivingCar.street(360, -120, 850, 750);
-                    visionMotor.run_target(1000, 100, Stop.HOLD, False);
-                    selfDrivingCar.turn(1, -90, 30, 750, 550);
-                    selfDrivingCar.streetStall(100, -90, 550, 500, 500);
+                        monke.fastAcceleration(False)
+                        monke.street(130, 0, 2000, 2000)
+                        monke.look(0, False)
+                        monke.fastAcceleration(True)
+                        monke.turn(1, -90, 40, 2000, 2000)
+                        monke.streetLine(700, -90, 2000, 2000)
+                        monke.turn(1, -130, 40, 2000, 2000)
+                        monke.look(LEFT, False)
+                        monke.streetStall(300, -90, 2000, 1000, 100)
 
-                else:
+                    else:
+                        # nNormal nGreen fNormal fRed
+
+                        monke.fastAcceleration(True)
+                        monke.street(-230, 0, 400, 300)
+                        monke.HOLD()
+                        
+                        monke.fastAcceleration(False)
+                        monke.street(250, 0, 2000, 2000)
+                        monke.look(0, False)
+                        monke.fastAcceleration(True)
+                        monke.turn(1, -88, 40, 2000, 2000)
+                        monke.street(650, -80, 2000, 2000)
+
+                        monke.street(700, -150, 2000, 2000)
+                        monke.look(LEFT, False)
+                        monke.streetStall(550, -90, 2000, 2000, 200)
+
+                else: 
                     # nNormal nGreen fParking fGreen
-
-                    driveMotor.hold();
-                    selfDrivingCar.streetStall(-300, 0, 800, 750, 500);
-                    
-                    visionMotor.run_target(1000, 0, Stop.HOLD, False);
-                    selfDrivingCar.turn(1, -90, 30, 650, 550);
-                    selfDrivingCar.street(700, -90, 900, 850);
-                    selfDrivingCar.turn(1, -55, 30, 850, 750);
-                    visionMotor.run_target(1000, 100, Stop.HOLD, False);
-                    selfDrivingCar.turn(1, -90, 30, 850, 750);
-                    selfDrivingCar.streetStall(100, -90, 750, 600, 500);
-
-            else:
-                # nNormal nGreen fNormal
-
-                if (recordListInput == ["", "", "", ""]):
-                    visionMotor.run_target(1000, 30, Stop.HOLD, True);
-                    trafficSign = selfDrivingCar.cameraScan(70, 100);
-                    recordListValue.append(trafficSign);
-                    print("f" + trafficSign);
-                else:
-                    trafficSign = recordListInput[3];
-                
-                if (trafficSign == "Red"):
-                    # nNormal nGreen fNormal fRed
-
-                    visionMotor.run_target(1000, -100, Stop.HOLD, False);
-                    selfDrivingCar.turn(1, 180, 30, 750, 650);
-                    driveMotor.hold();
-                    selfDrivingCar.streetStall(-350, 180, 900, 850, 500);
-
-                    selfDrivingCar.street(430, 0, 900, 850);
-                    visionMotor.run_target(1000, 0, Stop.HOLD, False);
-                    selfDrivingCar.turn(1, -90, 30, 850, 650);
-                    selfDrivingCar.streetLine(300, -90, 900, 850);
-
-                    selfDrivingCar.turn(1, -130, 30, 850, 750);
-                    selfDrivingCar.street(390, -120, 850, 750);
-                    visionMotor.run_target(1000, 100, Stop.HOLD, False);
-                    selfDrivingCar.turn(1, -90, 30, 750, 550);
-                    selfDrivingCar.streetStall(100, -90, 550, 500, 500);
-
-                else:
                     # nNormal nGreen fNormal fGreen
 
-                    visionMotor.run_target(1000, 0, Stop.HOLD, False);
-                    selfDrivingCar.drive(1000, 950, 850, -3, -1);
-                    selfDrivingCar.turn(1, 120, 30, 850, 750);
-                    selfDrivingCar.street(700, 120, 800, 700);
-                    visionMotor.run_target(1000, 100, Stop.HOLD, False);
-                    selfDrivingCar.turn(1, 90, 30, 850, 650);
-                    selfDrivingCar.streetStall(10, 90, 650, 500, 400);
+                    monke.look(0, False)
+                    monke.fastAcceleration(True)
+                    monke.street(-50, 0, 2000, 2000)
+                    monke.turn(-1, -92, 40, 850, 600)
+                    monke.street(-100, -92, 500, 300)
+                    monke.HOLD(100)
 
-    selfDrivingCar.motorClose();
+                    monke.fastAcceleration(False)
+                    monke.street(150, -90, 2000, 2000)
+                    monke.fastAcceleration(True)
+                    monke.streetLine(650, -90, 2000, 2000)
+
+                    monke.turn(1, -40, 40, 2000, 2000)
+                    monke.street(100, -40, 2000, 2000)
+                    monke.look(LEFT, False)
+                    monke.turn(1, -90, 40, 1000, 750)
+                    monke.streetStall(200, -90, 750, 700, 100)
+
+                
+    finally:
+        monke.motorClose()
 
     if (recordListValue == []):
-        return recordListInput;
-    else:    
-        return recordListValue;
+        return recordListInput
+    else:
+        return recordListValue
 
-# try:
-#     recordListValue = ["", "", "", ""];
-#     for i in range (2):
-#         print("\n");
-#         hub.imu.reset_heading(0);
-#         recordListValue = obstacleLoopClockwise(recordListValue);
-# except:
-#     pass;
-# finally:
-#     print(recordListValue);
-#     print(timer.time());
+
+
+if __name__ == "__main__":
+    try:
+        print(hub.battery.voltage())
+        hub.speaker.beep(500)
+
+        recordListValue = [None for x in range(4)]
+        _ = Motor(Port.F, Direction.CLOCKWISE, [1], False, 5)
+        _.run_target(1000, -90, Stop.HOLD, False)
+        wait(800)
+        _.close()
+
+        _ = 0
+
+        for i in range(4):
+            print("\n")
+            recordListValue = [None for x in range(4)]
+            hub.imu.reset_heading(0)
+            recordListValue = obstacleCounterclockwise(recordListValue, _)
+            print(f"Time: {clock.time()}")
+
+    finally:
+        v = Motor(Port.F, Direction.CLOCKWISE, [1], False, 5)
+        s = Motor(Port.B, Direction.COUNTERCLOCKWISE, [1], False, 5)
+        v.run_target(1000, -90, Stop.HOLD, False)
+        s.run_target(1000, 0, Stop.HOLD, False)
+        wait(800)
