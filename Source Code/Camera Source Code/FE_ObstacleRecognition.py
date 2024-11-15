@@ -22,6 +22,8 @@ roiHeight = screenHeight - roiY
 roi = (roiX, roiY, roiWidth, roiHeight)
 
 sensor.set_windowing(roi)
+sensor.set_framerate(15)
+# to consume less power
 
 contestMode = False
 
