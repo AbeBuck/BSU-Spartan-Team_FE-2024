@@ -228,7 +228,7 @@ camera.add_command('blob', 'hhhhhh')
 gtsCall = camera.call('blob')
 ```
 
-The main program for traffic sign detection is provided here: [`FE_ObstacleRecognition`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/FE_ObstacleRecognition.py). This program is uploaded to the OpenMV Cam H7 Plus. For the step by step guide how the program is compiled and uploaded to the camera, refer to [OpenMV Cam H7 Plus Program Guide](####openmv-cam-h7-program-guide)
+The main program for traffic sign detection is provided here: [`FE_ObstacleRecognition`](https://github.com/AbeBuck/BSU-Spartan-Team_FE-2024/blob/main/Source%20Code/FE_ObstacleRecognition.py). This program is uploaded to the OpenMV Cam H7 Plus. For the step by step guide how the program is compiled and uploaded to the camera, refer to [Camera Program Guide](####camera-program-guide)
 
 ### 3.2. Parking Lot Detection
 
